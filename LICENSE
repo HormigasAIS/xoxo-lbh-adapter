@@ -1,21 +1,34 @@
-MIT License
+# Business Source License 1.1 (Adaptada para HormigasAIS)
 
-Copyright (c) 2025 Cristhiam Quiñonez — HormigasAIS
+## 1. Definición
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+**"El Software":** Se refiere al código fuente del proyecto XOXO-LBH Adapter, incluyendo todos sus archivos, el código Python, los tests y la documentación técnica asociada.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**"Uso de Producción Prohibido":** Significa cualquier uso del Software para:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1.  **Ejecución Persistente M2M:** Implementación del Software en sistemas de producción que involucren la **comunicación persistente, automatizada y continua (24/7)** entre máquinas, robots (incluyendo entornos ROS/ROS2), o dispositivos IoT industriales.
+2.  **Integración de la Capa de Seguridad:** Uso de las funciones de **HMAC** y seguridad del módulo `security.py` para autenticar datos en un entorno comercial o de producción.
+3.  **Venta de Servicio:** Ofrecer el Software, o cualquier código basado en el Software, como un servicio comercial, plataforma SaaS, o API de pago a terceros.
+4.  **Uso Corporativo Escalonado:** Cualquier uso que caiga bajo las definiciones de **PYMES, EMPRESA o CORPORATIVO** según el **Esquema de Licenciamiento Escalonado** descrito en la Licencia .human (v1.0) de HormigasAIS.
+
+## 2. Otorgamiento de Licencia
+
+El Licenciante (Cristhiam Quiñonez | HormigasAIS) le otorga el derecho de copiar, modificar, crear trabajos derivados, hacer funcionar y distribuir el Software, siempre que no incurra en el **Uso de Producción Prohibido**.
+
+## 3. Condiciones de Uso
+
+**3.1 Uso Permitido (Freemium/Comunidad):** El uso del Software está permitido sin costo para:
+* Desarrollo no comercial, pruebas, *benchmarking* y entornos de simulación (incluyendo simulaciones ROS/ROS2).
+* Uso comercial que no califique como "Uso de Producción Prohibido" y que permanezca dentro de los límites de consumo y persistencia definidos en la capa **Freemium** de HormigasAIS.
+
+**3.2 Requerimiento de Licencia Comercial:** Para cualquier **Uso de Producción Prohibido**, el usuario debe adquirir una **Licencia Comercial** separada y vigente de HormigasAIS, siguiendo las tarifas y condiciones definidas en el **Esquema de Licenciamiento Escalonado** del Licenciante.
+
+## 4. Cambio de Licencia (Change Date)
+
+El Software cambiará automáticamente su licencia a la **Licencia MIT** en la fecha de cambio, que será **4 años** después de la fecha de su publicación inicial (ejemplo: 2029-12-16).
+
+## 5. Derechos del Copyright
+
+El copyright sobre el Software es propiedad de Cristhiam Quiñonez. Cualquier distribución del Software o de sus modificaciones debe incluir la presente Licencia BSL y una referencia clara a **@Thrumanshow | HormigasAIS**.
+
+**(Fin de la Licencia BSL 1.1 Adaptada)**
