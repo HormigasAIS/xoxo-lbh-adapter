@@ -1,10 +1,10 @@
 # XOXO-LBH Adapter
 
-![License](https://img.shields.io/badge/License-BSL%201.1%20(HormigasAIS)-blue?style=flat-square&logo=github)
+[![License: BSL 1.1 Adapted](https://img.shields.io/badge/License-BSL%201.1%20(HormigasAIS)-blue?style=flat-square&logo=github)](https://github.com/Thrumanshow/xoxo-lbh-adapter/blob/e65f411703bf11f28218bf13fe9ba3928ddf94dd/LICENSE)
 
-Autor: Cristhiam Quiñonez — HormigasAIS  
-Licencia: BSL 1.1 Adaptada  
-Objetivo: Integración de XOXO con LBH-M2M para robots, IoT y comunicación distribuida.
+**Autor:** Cristhiam Quiñonez — HormigasAIS  
+**Licencia:** BSL 1.1 Adaptada  
+**Objetivo:** Integración de XOXO con LBH-M2M para robots, IoT y comunicación distribuida.
 
 ---
 
@@ -110,49 +110,6 @@ Soporte Robótica & IoT: Comandos y lectura de sensores vía MQTT.
 Preparación para Freemium/Premium: Compatible con botones interactivos LBH.
 
 
----
-
-🔹 Roadmap Futuro
-
-Extensión LBH-SPEC v2.0 completo.
-
-Integración con ROS2 para robótica modular.
-
-Validación avanzada y autogeneración de paquetes LBH desde JSON.
-
-Expansión del soporte Freemium/Premium y mercado B2B.
-
-
----
-
-🔹 Licencia
-
-Este proyecto está bajo la licencia MIT.
-"Inteligencia colaborativa para un futuro automatizado y humano"
- ├── requirements.txt
- ├── pyproject.toml
- ├── test_adapter.py
- └── README.md
-
-
----
-
-🔹 Objetivo Cumplido
-
-1. Protocolo Binario LBH-M2M: Encoder y decoder robustos.
-
-
-2. Capa de Seguridad HMAC: Integridad y autenticidad de datos M2M.
-
-
-3. Integración JSON-LBH: Herramienta lista para clientes B2B.
-
-
-4. Soporte Robótica & IoT: Comandos y lectura de sensores via MQTT.
-
-
-5. Preparación para Freemium/Premium: Compatible con botones interactivos LBH.
-
 
 ---
 
@@ -165,6 +122,7 @@ Integración con ROS2 para robótica modular.
 Validación avanzada y autogeneración de paquetes LBH desde JSON.
 
 Expansión del soporte Freemium/Premium y mercado B2B.
+
 
 
 ---
