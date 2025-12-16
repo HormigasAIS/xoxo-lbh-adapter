@@ -1,10 +1,10 @@
 # XOXO-LBH Adapter
 
-![License](BSL 1.1 Adaptada)
+![License](https://img.shields.io/badge/License-BSL%201.1%20(HormigasAIS)-blue?style=flat-square&logo=github)
 
-**Autor:** Cristhiam Quiñonez — HormigasAIS  
-**Licencia:** 
-**Objetivo:** Integración de XOXO con LBH-M2M para robots, IoT y comunicación distribuida.
+Autor: Cristhiam Quiñonez — HormigasAIS  
+Licencia: BSL 1.1 Adaptada  
+Objetivo: Integración de XOXO con LBH-M2M para robots, IoT y comunicación distribuida.
 
 ---
 
@@ -110,7 +110,6 @@ Soporte Robótica & IoT: Comandos y lectura de sensores vía MQTT.
 Preparación para Freemium/Premium: Compatible con botones interactivos LBH.
 
 
-
 ---
 
 🔹 Roadmap Futuro
@@ -122,7 +121,6 @@ Integración con ROS2 para robótica modular.
 Validación avanzada y autogeneración de paquetes LBH desde JSON.
 
 Expansión del soporte Freemium/Premium y mercado B2B.
-
 
 
 ---
@@ -156,8 +154,6 @@ Este proyecto está bajo la licencia MIT.
 5. Preparación para Freemium/Premium: Compatible con botones interactivos LBH.
 
 
-
-
 ---
 
 🔹 Roadmap Futuro
@@ -171,10 +167,9 @@ Validación avanzada y autogeneración de paquetes LBH desde JSON.
 Expansión del soporte Freemium/Premium y mercado B2B.
 
 
-
 ---
 
 🔹 Licencia
 
-Este proyecto está bajo la licencia BSL 1.1 Adaptada.
-"Inteligencia colaborativa para un futuro automatizado y humano"
+Este proyecto está bajo la Business Source License 1.1 (BSL 1.1) Adaptada para HormigasAIS.
+"Inteligencia colaborativa para un futuro automatizado y centrado en el ser humano"
