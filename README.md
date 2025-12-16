@@ -1,9 +1,9 @@
 # XOXO-LBH Adapter
 
-![License](https://img.shields.io/badge/license-MIT-green)
+![License]()
 
 **Autor:** Cristhiam Quiñonez — HormigasAIS  
-**Licencia:** MIT  
+**Licencia:** 
 **Objetivo:** Integración de XOXO con LBH-M2M para robots, IoT y comunicación distribuida.
 
 ---
