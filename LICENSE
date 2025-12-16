@@ -1,34 +1,72 @@
-# Business Source License 1.1 (Adaptada para HormigasAIS)
+BUSINESS SOURCE LICENSE 1.1 (ADAPTED FOR HORMIGASAIS)
 
-## 1. Definición
+COPYRIGHT (C) 2025 CRISTHIAM QUIÑONEZ — HORMIGASAIS
 
-**"El Software":** Se refiere al código fuente del proyecto XOXO-LBH Adapter, incluyendo todos sus archivos, el código Python, los tests y la documentación técnica asociada.
+PERMISSION IS HEREBY GRANTED TO ANY PERSON TO USE, COPY, MODIFY, OR DISTRIBUTE THE SOFTWARE, UNDER THE CONDITIONS DEFINED BELOW. THE SOFTWARE INCLUDES ALL SOURCE CODE, TESTS, DOCUMENTATION, AND EXAMPLES OF THE XOXO-LBH ADAPTER PROJECT.
 
-**"Uso de Producción Prohibido":** Significa cualquier uso del Software para:
+1. DEFINITIONS
 
-1.  **Ejecución Persistente M2M:** Implementación del Software en sistemas de producción que involucren la **comunicación persistente, automatizada y continua (24/7)** entre máquinas, robots (incluyendo entornos ROS/ROS2), o dispositivos IoT industriales.
-2.  **Integración de la Capa de Seguridad:** Uso de las funciones de **HMAC** y seguridad del módulo `security.py` para autenticar datos en un entorno comercial o de producción.
-3.  **Venta de Servicio:** Ofrecer el Software, o cualquier código basado en el Software, como un servicio comercial, plataforma SaaS, o API de pago a terceros.
-4.  **Uso Corporativo Escalonado:** Cualquier uso que caiga bajo las definiciones de **PYMES, EMPRESA o CORPORATIVO** según el **Esquema de Licenciamiento Escalonado** descrito en la Licencia .human (v1.0) de HormigasAIS.
 
-## 2. Otorgamiento de Licencia
 
-El Licenciante (Cristhiam Quiñonez | HormigasAIS) le otorga el derecho de copiar, modificar, crear trabajos derivados, hacer funcionar y distribuir el Software, siempre que no incurra en el **Uso de Producción Prohibido**.
+"SOFTWARE": THE ENTIRE CONTENT OF THE XOXO-LBH ADAPTER REPOSITORY, INCLUDING ALL FILES, PYTHON CODE, TESTS, EXAMPLES, AND TECHNICAL DOCUMENTATION.
 
-## 3. Condiciones de Uso
+"PROHIBITED PRODUCTION USE": ANY USE THAT INVOLVES:
 
-**3.1 Uso Permitido (Freemium/Comunidad):** El uso del Software está permitido sin costo para:
-* Desarrollo no comercial, pruebas, *benchmarking* y entornos de simulación (incluyendo simulaciones ROS/ROS2).
-* Uso comercial que no califique como "Uso de Producción Prohibido" y que permanezca dentro de los límites de consumo y persistencia definidos en la capa **Freemium** de HormigasAIS.
+1. PERSISTENT M2M EXECUTION: CONTINUOUS (24/7) COMMUNICATION BETWEEN MACHINES, ROBOTS, IOT DEVICES, OR ROS/ROS2 ENVIRONMENTS.
 
-**3.2 Requerimiento de Licencia Comercial:** Para cualquier **Uso de Producción Prohibido**, el usuario debe adquirir una **Licencia Comercial** separada y vigente de HormigasAIS, siguiendo las tarifas y condiciones definidas en el **Esquema de Licenciamiento Escalonado** del Licenciante.
 
-## 4. Cambio de Licencia (Change Date)
+2. SECURITY LAYER INTEGRATION: USE OF HMAC FUNCTIONS AND THE SECURITY.PY MODULE TO AUTHENTICATE DATA IN COMMERCIAL OR PRODUCTION ENVIRONMENTS.
 
-El Software cambiará automáticamente su licencia a la **Licencia MIT** en la fecha de cambio, que será **4 años** después de la fecha de su publicación inicial (ejemplo: 2029-12-16).
 
-## 5. Derechos del Copyright
+3. SERVICE SALE: OFFERING THE SOFTWARE OR DERIVATIVE WORKS AS SAAS, PAID API, OR THIRD-PARTY PLATFORM.
 
-El copyright sobre el Software es propiedad de Cristhiam Quiñonez. Cualquier distribución del Software o de sus modificaciones debe incluir la presente Licencia BSL y una referencia clara a **@Thrumanshow | HormigasAIS**.
 
-**(Fin de la Licencia BSL 1.1 Adaptada)**
+4. TIERED CORPORATE USE: USE BY SMES, COMPANIES, OR CORPORATIONS ACCORDING TO HORMIGASAIS’ TIERED LICENSING SCHEME.
+
+
+5. LICENSE GRANT
+
+
+
+THE LICENSOR (CRISTHIAM QUIÑONEZ | HORMIGASAIS) GRANTS THE USER THE RIGHTS TO:
+
+COPY, MODIFY, RUN, CREATE DERIVATIVE WORKS, AND DISTRIBUTE THE SOFTWARE, AS LONG AS NONE OF THE PROHIBITED PRODUCTION USES OCCUR.
+
+ALLOWED USES INCLUDE:
+
+NON-COMMERCIAL DEVELOPMENT, TESTING, BENCHMARKING, AND SIMULATION ENVIRONMENTS (INCLUDING ROS/ROS2).
+
+FREEMIUM USE WITHIN THE CONSUMPTION AND PERSISTENCE LIMITS DEFINED BY HORMIGASAIS.
+
+
+PROHIBITED USES WITHOUT COMMERCIAL LICENSE:
+
+PERSISTENT M2M EXECUTION IN PRODUCTION.
+
+USE OF HMAC AND SECURITY FEATURES IN PRODUCTION ENVIRONMENTS.
+
+SELLING THE SOFTWARE AS A SERVICE.
+
+TIERED CORPORATE USE BY COMPANIES, SMES, OR CORPORATIONS PER HORMIGASAIS’ LICENSING SCHEME.
+
+
+3. COMMERCIAL LICENSE
+
+
+
+FOR ANY PROHIBITED PRODUCTION USE, A VALID COMMERCIAL LICENSE FROM HORMIGASAIS IS REQUIRED, UNDER TERMS AND RATES DEFINED IN THE LICENSOR’S TIERED LICENSING SCHEME.
+
+4. COPYRIGHT
+
+
+
+COPYRIGHT © CRISTHIAM QUIÑONEZ | HORMIGASAIS. ANY REDISTRIBUTION OR MODIFICATION MUST INCLUDE THIS BSL 1.1 ADAPTED LICENSE AND CLEAR REFERENCE TO @THRUMANSHOW | HORMIGASAIS.
+
+5. NOTES
+
+
+
+THIS LICENSE ENSURES A BALANCE BETWEEN COMMUNITY USE AND COMMERCIAL PROTECTION, PROMOTING DEVELOPMENT, TESTING, AND LEARNING WHILE MAINTAINING CONTROL OVER CRITICAL OR COMMERCIAL IMPLEMENTATIONS OF THE SOFTWARE.
+
+"COLLABORATIVE INTELLIGENCE FOR AN AUTOMATED AND HUMAN-CENTERED FUTURE"
+
