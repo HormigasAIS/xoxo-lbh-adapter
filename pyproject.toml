@@ -21,7 +21,7 @@ classifiers = [
     "Topic :: Home Automation"
 ]
 
-# Dependencias en formato array de strings
+# Dependencias en formato array de strings (CORRECTO)
 dependencies = [
     "paho-mqtt==1.6.1",
     "fastapi==0.111.1",
@@ -39,9 +39,6 @@ Documentation = "https://github.com/Thrumanshow/xoxo-lbh-adapter/wiki"
 [tool.setuptools.packages.find]
 where = ["adapter"]
 exclude = ["tests*"]
-
-[tool.setuptools]
-zip_safe = false
 
 [tool.pytest.ini_options]
 minversion = "7.0"
