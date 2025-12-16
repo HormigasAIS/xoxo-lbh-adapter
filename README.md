@@ -1,6 +1,6 @@
 # XOXO-LBH Adapter
 
-![License]()
+![License](BSL 1.1 Adaptada)
 
 **Autor:** Cristhiam Quiñonez — HormigasAIS  
 **Licencia:** 
@@ -176,5 +176,5 @@ Expansión del soporte Freemium/Premium y mercado B2B.
 
 🔹 Licencia
 
-Este proyecto está bajo la licencia MIT.
+Este proyecto está bajo la licencia BSL 1.1 Adaptada.
 "Inteligencia colaborativa para un futuro automatizado y humano"
