@@ -1,4 +1,7 @@
+
 # XOXO-LBH Adapter
+
+![License](https://img.shields.io/badge/license-MIT-green)
 
 **Autor:** Cristhiam Quiñonez — HormigasAIS  
 **Licencia:** MIT  
@@ -8,31 +11,33 @@
 
 ## 🔹 Descripción
 
-XOXO-LBH Adapter es un paquete Python que permite a XOXO integrarse directamente con **LBH-M2M**, habilitando:
+`XOXO-LBH Adapter` es un paquete Python que permite a **XOXO** integrarse directamente con **LBH-M2M**, habilitando:
 
-- Comunicación Machine-to-Machine (M2M) segura y ligera.  
+- Comunicación **Machine-to-Machine (M2M)** segura y ligera.  
 - Conversión entre **JSON ↔ LBH binario** para intercambio de datos con robots y sensores.  
-- Soporte para el **ecosistema HormigasAIS**, incluyendo Freemium/Premium y herramientas B2B.  
+- Soporte para el ecosistema HormigasAIS, incluyendo **Freemium/Premium** y herramientas B2B.
 
 Este adapter funciona como **puente inteligente** entre la capa de automatización XOXO y el protocolo LBH-M2M, permitiendo:
 
-1. Publicación de comandos a actuadores.  
-2. Lectura de datos de sensores en tiempo real.  
-3. Validación de integridad mediante **HMAC**.  
-4. Preparación para integraciones JSON-LBH para clientes B2B.
+- Publicación de comandos a actuadores.  
+- Lectura de datos de sensores en tiempo real.  
+- Validación de integridad mediante **HMAC**.  
+- Preparación para integraciones **JSON-LBH** para clientes B2B.
 
 ---
 
 ## 🔹 Instalación
 
-Requisitos:
+### Requisitos
 
 - Python 3.8+  
 - pip  
-- Broker MQTT (ej. Mosquitto)  
+- Broker MQTT (ej. Mosquitto)
+
+### Pasos
 
 ```bash
-# Clonar repo
+# Clonar el repositorio
 git clone https://github.com/Thrumanshow/xoxo-lbh-adapter.git
 cd xoxo-lbh-adapter
 
@@ -85,6 +90,48 @@ xoxo-lbh-adapter/
  ├── tests/
  │     ├── test_core.py
  │     ├── test_json_lbh.py
+ ├── requirements.txt
+ ├── pyproject.toml
+ ├── test_adapter.py
+ └── README.md
+
+
+---
+
+🔹 Objetivo Cumplido
+
+Protocolo Binario LBH-M2M: Encoder y decoder robustos.
+
+Capa de Seguridad HMAC: Integridad y autenticidad de datos M2M.
+
+Integración JSON-LBH: Herramienta lista para clientes B2B.
+
+Soporte Robótica & IoT: Comandos y lectura de sensores vía MQTT.
+
+Preparación para Freemium/Premium: Compatible con botones interactivos LBH.
+
+
+
+---
+
+🔹 Roadmap Futuro
+
+Extensión LBH-SPEC v2.0 completo.
+
+Integración con ROS2 para robótica modular.
+
+Validación avanzada y autogeneración de paquetes LBH desde JSON.
+
+Expansión del soporte Freemium/Premium y mercado B2B.
+
+
+
+---
+
+🔹 Licencia
+
+Este proyecto está bajo la licencia MIT.
+"Inteligencia colaborativa para un futuro automatizado y humano"
  ├── requirements.txt
  ├── pyproject.toml
  ├── test_adapter.py
