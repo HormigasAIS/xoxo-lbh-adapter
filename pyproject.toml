@@ -18,15 +18,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Home Automation"
-]
-dependencies = [
-    "paho-mqtt==1.6.1",
-    "fastapi==0.111.1",
-    "uvicorn==0.23.2",
-    "python-dotenv==1.1.1",
-    "cryptography==41.0.2",
-    "typing-extensions==4.8.0"
+    "Topic :: Home Automation",
 ]
 
 [project.urls]
@@ -34,12 +26,20 @@ Homepage = "https://github.com/Thrumanshow/xoxo-lbh-adapter"
 Repository = "https://github.com/Thrumanshow/xoxo-lbh-adapter"
 Documentation = "https://github.com/Thrumanshow/xoxo-lbh-adapter/wiki"
 
+[tool.setuptools]
+install_requires = [
+    "paho-mqtt==1.6.1",
+    "fastapi==0.111.1",
+    "uvicorn==0.23.2",
+    "python-dotenv==1.1.1",
+    "cryptography==41.0.2",
+    "typing-extensions==4.8.0"
+]
+zip_safe = false
+
 [tool.setuptools.packages.find]
 where = ["adapter"]
 exclude = ["tests*"]
-
-[tool.setuptools]
-zip_safe = false
 
 [tool.pytest.ini_options]
 minversion = "7.0"
