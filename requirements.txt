@@ -1,0 +1,15 @@
+# Dependencias principales
+paho-mqtt==1.6.1          # Cliente MQTT para comunicación LBH-M2M
+fastapi==0.111.1           # Si expondrás API web
+uvicorn==0.23.2            # Servidor ASGI para FastAPI
+python-dotenv==1.1.1       # Manejo de variables de entorno
+
+# Seguridad y HMAC
+cryptography==41.0.2       # Para encriptación y firma de mensajes
+
+# Utilidades
+typing-extensions==4.8.0   # Tipos adicionales para Python 3.12
+
+# Tests
+pytest==8.4.2              # Framework de pruebas
+pytest-mock==3.11.3        # Mocking en pruebas
