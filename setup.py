@@ -12,7 +12,7 @@ lbh_module = Extension(
     extra_compile_args=["-O2", "-std=c++17"]
 )
 
-# Setup final combinando Python y módulo C++
+# Setup combinando Python y módulo C++
 setup(
     name="xoxo-lbh-adapter",
     version="1.0.0",
@@ -24,7 +24,8 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "xoxo-init = xoxo_init:__name__=='__main__'",
+            # Esto crea el comando ejecutable 'xoxo-init'
+            "xoxo-init = xoxo_init:main",
         ]
     },
     python_requires=">=3.12",
