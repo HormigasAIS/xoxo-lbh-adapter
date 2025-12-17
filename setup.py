@@ -1,9 +1,9 @@
 import os
-from setuptools import setup, Extension
+from setuptools import setup, find_packages, Extension
 import pybind11
 
+# Configuración del módulo nativo
 LBH_ROOT = os.environ.get("LBH_BIN_ROOT", "lbh_bin_module")
-
 lbh_module = Extension(
     "lbh_module",
     sources=[os.path.join(LBH_ROOT, "src", "lbh_module.cpp")],
@@ -12,10 +12,20 @@ lbh_module = Extension(
     extra_compile_args=["-O2", "-std=c++17"]
 )
 
+# Setup final combinando Python y módulo C++
 setup(
     name="xoxo-lbh-adapter",
-    version="0.1.0",
-    description="Adapter XOXO <-> LBH-M2M con módulo nativo C++",
+    version="1.0.0",
+    packages=find_packages(),
     ext_modules=[lbh_module],
-    zip_safe=False
+    zip_safe=False,
+    install_requires=[
+        # "uvloop",  # solo Linux
+    ],
+    entry_points={
+        "console_scripts": [
+            "xoxo-init = xoxo_init:__name__=='__main__'",
+        ]
+    },
+    python_requires=">=3.12",
 )
