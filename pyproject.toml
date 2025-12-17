@@ -7,6 +7,7 @@ name = "xoxo-lbh-adapter"
 version = "1.0.0"
 description = "Adapter XOXO <-> LBH-M2M para robots y comunicación M2M"
 authors = [
+    # Incluye el nombre y el correo electrónico de forma clara.
     { name = "Cristhiam Quiñonez", email = "chrisquionez354@gmail.com" }
 ]
 license = { file = "LICENSE" }
@@ -21,20 +22,25 @@ classifiers = [
     "Topic :: Home Automation"
 ]
 
-# Dependencias base (funciona en Termux y Linux)
+# Dependencias base (CORREGIDAS y optimizadas para evitar fallos de compilación)
 dependencies = [
     "paho-mqtt==1.6.1",
     "fastapi==0.111.1",
     "uvicorn==0.23.2",
     "python-dotenv==1.1.1",
-    "typing-extensions==4.8.0"
+    # ¡CRÍTICO! Faltaba una coma aquí
+    "typing-extensions==4.8.0",
+    # 'cryptography' funciona con 46.0.3, se incluye.
+    "cryptography==46.0.3"
+    # 'uvloop==0.17.0' fue eliminado para evitar el error de compilación.
+    # El bucle asyncio nativo funciona bien en Termux.
 ]
 
-# Dependencias opcionales (solo Linux)
+# Se añade esta sección para los usuarios que quieren rendimiento extra (uvloop)
+# Si un usuario quiere uvloop, debe instalarlo con 'pip install -e .[performance]'
 [project.optional-dependencies]
-linux = [
-    "uvloop==0.17.0",
-    "cryptography==46.0.3"
+performance = [
+    "uvloop==0.17.0"
 ]
 
 [project.urls]
