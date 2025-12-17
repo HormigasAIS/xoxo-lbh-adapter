@@ -21,14 +21,20 @@ classifiers = [
     "Topic :: Home Automation"
 ]
 
-# Dependencias en formato array de strings (CORRECTO)
+# Dependencias base (funciona en Termux y Linux)
 dependencies = [
     "paho-mqtt==1.6.1",
     "fastapi==0.111.1",
     "uvicorn==0.23.2",
     "python-dotenv==1.1.1",
-    "cryptography==46.0.3",
     "typing-extensions==4.8.0"
+]
+
+# Dependencias opcionales (solo Linux)
+[project.optional-dependencies]
+linux = [
+    "uvloop==0.17.0",
+    "cryptography==46.0.3"
 ]
 
 [project.urls]
