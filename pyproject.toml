@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "xoxo-lbh-adapter"
-version = "0.1.0"
+version = "1.0.0"
 description = "Adapter XOXO <-> LBH-M2M para robots y comunicación M2M"
 authors = [
-    { name = "Cristhiam Quiñonez", email = "tu-email@ejemplo.com" }
+    { name = "Cristhiam Quiñonez", email = "chrisquionez354@gmail.com" }
 ]
 license = { file = "LICENSE" }
 readme = "README.md"
