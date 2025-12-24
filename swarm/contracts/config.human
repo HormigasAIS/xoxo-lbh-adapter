@@ -2,9 +2,28 @@
 # Autoridad L0: Thrumanshow
 
 [PERMISSIONS]
+# Fallback global (si un rol no está definido)
 LBH_ASSIST = true
 M2M_COMMUNICATION = true
 SANDBOX_MODE = true
+
+[ROLE:ALPHA]
+LBH_ASSIST = true
+M2M_COMMUNICATION = true
+SANDBOX_MODE = false
+GOVERNANCE = true
+
+[ROLE:BETA]
+LBH_ASSIST = true
+M2M_COMMUNICATION = true
+SANDBOX_MODE = true
+GOVERNANCE = false
+
+[ROLE:GAMMA]
+LBH_ASSIST = false
+M2M_COMMUNICATION = true
+SANDBOX_MODE = true
+GOVERNANCE = false
 
 [SECURITY]
 MASTER_KEY_REF = "swarm/security/lbh_config.py"
