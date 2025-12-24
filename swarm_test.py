@@ -4,7 +4,7 @@ import os
 
 # 1. Configuración de entorno
 sys.path.append(os.getcwd())
-from adapter.core import XOXOCore
+from adapter.core import XOXOAdapter
 
 # Tópico único para evitar ruidos de otros canales
 TOPIC_TELEMETRY = "hormigasais/swarm/telemetry"
@@ -12,8 +12,8 @@ TOPIC_TELEMETRY = "hormigasais/swarm/telemetry"
 print("🐜 [SISTEMA ENJAMBRE] Iniciando Protocolo LBH-Secure...")
 
 # 2. Inicialización de Agentes
-manager = XOXOCore(robot_id="manager_alpha")
-worker = XOXOCore(robot_id="worker_beta")
+manager = XOXOAdapter(robot_id="manager_alpha")
+worker = XOXOAdapter(robot_id="worker_beta")
 
 # 3. Lógica del Manager (IA)
 def procesar_datos(data):
@@ -25,7 +25,7 @@ def procesar_datos(data):
         print("🚨 [IA] Enviando comando de emergencia...")
 
 # 4. Configurar el receptor
-manager.adapter.set_handler(procesar_datos)
+manager.set_handler(procesar_datos)
 
 # 5. Iniciar conexiones
 manager.start()
