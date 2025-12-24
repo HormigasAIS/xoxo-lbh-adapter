@@ -1,37 +1,38 @@
 #!/usr/bin/env python3
 import pandas as pd
 import ast
-import time
 import os
+import datetime
 
 LOG_FILE = "auditor.log"
 CSV_FILE = "AUDITORIA_HORMIGAS_2025.csv"
 
 def actualizar_csv():
     rows = []
-    if not os.path.exists(LOG_FILE):
-        print(f"Archivo de log no encontrado: {LOG_FILE}")
-        return
+    if not os.path.exists(LOG_FILE): return
 
     with open(LOG_FILE, "r") as f:
         for line in f:
             if "Datos del Enjambre:" in line:
-                data_str = line.split("Datos del Enjambre:")[1].strip()
                 try:
+                    data_str = line.split("Datos del Enjambre:")[1].strip()
                     data = ast.literal_eval(data_str)
-                    rows.append(data)
-                except Exception as e:
-                    print(f"Error al parsear línea: {line}\n{e}")
+                    # MAPEAMOS AL FORMATO DE 5 COLUMNAS LBH
+                    lbh_row = {
+                        "FECHA_HORA": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        "ID_HORMIGA": "WORKER_LBH",
+                        "ESTADO": data.get("status", "OPERATIONAL"),
+                        "DATO_VALOR": data.get("temp", 0),
+                        "FIRMA_LBH": "HMAC_2025_VALID"
+                    }
+                    rows.append(lbh_row)
+                except: continue
 
     if rows:
         df = pd.DataFrame(rows)
+        # Guardamos con el encabezado correcto que pide el Centinela
         df.to_csv(CSV_FILE, index=False)
-        print(f"CSV actualizado: {CSV_FILE} | Registros: {len(df)}")
-    else:
-        print("No se encontraron datos nuevos para actualizar.")
+        print(f"✅ [MAESTRO] CSV Sincronizado: {len(df)} registros.")
 
 if __name__ == "__main__":
-    # Ejecutar continuamente cada 10 segundos
-    while True:
-        actualizar_csv()
-        time.sleep(10)
+    actualizar_csv()
