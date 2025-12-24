@@ -1,0 +1,9 @@
+paho-mqtt==1.6.1
+fastapi==0.111.1
+uvicorn==0.23.2
+python-dotenv==1.1.1
+typing-extensions==4.8.0
+cryptography==46.0.3
+
+[performance]
+uvloop==0.17.0

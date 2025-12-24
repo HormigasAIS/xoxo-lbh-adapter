@@ -1,54 +1,79 @@
 # core.py
 """
-XOXO-LBH Adapter - Core
+XOXO-LBH Adapter - Core con Seguridad HMAC y Gobernanza LBH
 Autor: Cristhiam Quiñonez
-Descripción:
-Capa central que integra XOXO con LBH-M2M, proporcionando:
-- Publicación y suscripción a tópicos MQTT
-- Conversión JSON <-> LBH
-- Gestión de handlers para dashboard y robots
-- Escalabilidad para múltiples robots y entornos B2B
 """
 
-from adapter import XOXOAdapter, json_to_lbh, lbh_to_json
+import json
+import paho.mqtt.client as mqtt
+# Importamos las herramientas de seguridad y el contrato
+from .json_lbh import json_to_lbh, lbh_to_json
+from adapter.human_contract import HumanContract 
 
-class XOXOCore:
-    def __init__(self, broker="localhost", robot_id="robot_default"):
-        """
-        Inicializa el adapter con broker y robot_id
-        """
-        self.adapter = XOXOAdapter(broker=broker, robot_id=robot_id)
+class XOXOAdapter:
+    def __init__(self, broker="localhost", port=1883, **kwargs):
+        self.broker = broker
+        self.port = port
+        self.robot_id = kwargs.get('robot_id', 'unknown_robot')
+        self.on_data_handler = None
 
-    def start(self):
-        """
-        Inicia el loop del adapter
-        """
-        self.adapter.loop_start()
+        # 🔐 PASO 3: Inicialización del Contrato Humano (LBH)
+        # El "Sacerdote" se integra al motor para vigilar las acciones
+        self.human_contract = HumanContract()
+        self.human_contract.load()
 
-    def stop(self):
-        """
-        Detiene el loop del adapter
-        """
-        self.adapter.loop_stop()
+        # Tópicos siguiendo el estándar HormigasAIS
+        self.cmd_topic = f"hormigasais/{self.robot_id}/commands"
+        self.rpt_topic = f"hormigasais/{self.robot_id}/reports"
 
-    def send_command(self, payload: dict):
-        """
-        Envía comando a actuadores
-        payload = {"motor_id": 1, "position": 90, "speed": 120}
-        """
-        lbh_frame = json_to_lbh(payload)
-        self.adapter.publish_act(**payload)
-        return lbh_frame
+        # Cliente MQTT
+        self.client = mqtt.Client(client_id=self.robot_id)
+        self.client.on_connect = self._on_connect
+        self.client.on_message = self._on_message
 
-    def set_dashboard_handler(self, handler):
-        """
-        Asigna función para recibir datos del robot
-        """
-        def wrapped_handler(topic, data):
-            try:
-                json_data = lbh_to_json(data)
-                handler(topic, json_data)
-            except Exception as e:
-                print("Error al decodificar:", e)
+        print(f"📡 Sistema LBH-Secure Activo | Robot: {self.robot_id}")
 
-        self.adapter.set_handler(wrapped_handler)
+    # 🛡️ PASO 4: El Método Barrera (Gatekeeper)
+    def check_permission(self, permission: str) -> bool:
+        """Verifica si la Ley Humana permite la ejecución"""
+        allowed = self.human_contract.allows(permission)
+        if not allowed:
+            print(f"⛔ [LBH BLOCK] Acción denegada por contrato | permiso: {permission}")
+        return allowed
+
+    def _on_connect(self, client, userdata, flags, rc):
+        if rc == 0:
+            print(f"✅ Conectado al Broker: {self.broker}")
+            # El Manager se suscribe para escuchar a los Workers
+            self.client.subscribe("hormigasais/+/reports")
+            print(f"📥 Escuchando reportes del enjambre...")
+        else:
+            print(f"❌ Error de conexión al Broker. Código: {rc}")
+
+    # 🛡️ PASO 5: Protección de la Acción Real (Procesamiento de datos)
+    def _on_message(self, client, userdata, msg):
+        """Recibe reportes y solo los procesa si hay permiso humano"""
+        
+        # Primero revisamos si el contrato permite 'LBH_ASSIST'
+        if not self.check_permission("LBH_ASSIST"):
+            return # Si es 'false', el motor ignora el mensaje y no hace nada
+
+        try:
+            payload_hex = msg.payload.decode()
+            
+            # 🔐 Aquí el Core usa json_lbh para validar la FIRMA HMAC
+            # Si la firma es falsa, el método lanzará un error
+            data_dict = lbh_to_json(payload_hex) 
+
+            if self.on_data_handler:
+                # Si todo es legal, enviamos los datos al Manager
+                self.on_data_handler(msg.topic, data_dict)
+                
+        except Exception as e:
+            print(f"⚠️ [SEGURIDAD] Mensaje rechazado o corrupto: {e}")
+
+    def loop_forever(self):
+        """Mantiene al Fiscal (Manager) despierto y escuchando"""
+        self.client.connect(self.broker, self.port, 60)
+        self.client.loop_forever()
+

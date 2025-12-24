@@ -1,40 +1,44 @@
-# json_lbh.py
-"""
-XOXO-LBH Adapter - JSON <-> LBH Conversion
-Autor: Cristhiam Quiñonez
-Descripción:
-Provee funciones para convertir datos entre formato JSON y LBH binario
-para la comunicación segura con LBH-M2M.
-"""
-
 import json
-from bridge.protocol.encoder import encode_packet
-from bridge.protocol.decoder import decode_lbh_packet
+import hmac
+import hashlib
 
-def json_to_lbh(payload: dict) -> str:
-    """
-    Convierte un diccionario JSON a un frame LBH.
-    :param payload: Diccionario con datos a enviar
-    :return: Frame LBH codificado
-    """
-    try:
-        json_str = json.dumps(payload)
-        frame = encode_packet(header="00000001", type_code="00000010", payload=json_str)
-        return frame
-    except Exception as e:
-        print("[json_lbh] Error convirtiendo JSON a LBH:", e)
-        raise
+# 🔐 CLAVE SECRETA DEL ENJAMBRE 
+# Debe ser la misma en la Worker y en el Manager
+SECRET_KEY = b"hormigasais_secret_token_2025"
 
-def lbh_to_json(frame: str) -> dict:
-    """
-    Convierte un frame LBH a JSON.
-    :param frame: Frame LBH recibido
-    :return: Diccionario decodificado
-    """
+def json_to_lbh(data_dict: dict) -> str:
+    """Convierte un diccionario a un Frame LBH firmado (Hexadecimal)"""
+    json_str = json.dumps(data_dict, separators=(',', ':'))
+    payload_bytes = json_str.encode()
+    
+    # Crear firma HMAC-SHA256
+    signature = hmac.new(SECRET_KEY, payload_bytes, hashlib.sha256).hexdigest()
+    
+    # Unir payload y firma con un separador '|' y convertir todo a hex
+    full_packet = f"{json_str}|{signature}"
+    return full_packet.encode().hex()
+
+def lbh_to_json(hex_str: str) -> dict:
+    """Decodifica un Frame LBH y VALIDA la firma HMAC"""
     try:
-        decoded = decode_lbh_packet(frame)
-        payload_str = decoded.get("payload", "{}")
+        # 1. Convertir de hexadecimal a texto
+        decoded_str = bytes.fromhex(hex_str).decode()
+        
+        # 2. Separar el JSON de la firma
+        if "|" not in decoded_str:
+            raise ValueError("Formato LBH inválido: falta separador de firma")
+            
+        payload_str, received_signature = decoded_str.rsplit("|", 1)
+        payload_bytes = payload_str.encode()
+        
+        # 3. VERIFICACIÓN CRIPTOGRÁFICA
+        expected_signature = hmac.new(SECRET_KEY, payload_bytes, hashlib.sha256).hexdigest()
+        
+        if not hmac.compare_digest(expected_signature, received_signature):
+            raise PermissionError("⚠️ [ALERTA] Firma HMAC no válida. ¡Mensaje posiblemente alterado!")
+            
         return json.loads(payload_str)
+        
     except Exception as e:
-        print("[json_lbh] Error convirtiendo LBH a JSON:", e)
-        raise
+        raise Exception(f"Fallo en decodificación LBH: {str(e)}")
+

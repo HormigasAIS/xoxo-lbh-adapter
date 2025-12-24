@@ -1,0 +1,11 @@
+# --- HORMIGAS AIS: LBH PROTOCOL CONTRACT ---
+# Autoridad L0: Thrumanshow
+
+[PERMISSIONS]
+LBH_ASSIST = true
+M2M_COMMUNICATION = true
+SANDBOX_MODE = true
+
+[SECURITY]
+MASTER_KEY_REF = "swarm/security/lbh_config.py"
+REQUIRED_SIGNATURE = "HMAC_SHA256"

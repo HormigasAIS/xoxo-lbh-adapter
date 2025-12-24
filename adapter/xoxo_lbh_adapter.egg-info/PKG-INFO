@@ -1,0 +1,234 @@
+Metadata-Version: 2.4
+Name: xoxo-lbh-adapter
+Version: 1.0.0
+Summary: Adapter XOXO <-> LBH-M2M para robots y comunicación M2M
+Author-email: Cristhiam Quiñonez <chrisquionez354@gmail.com>
+License: BUSINESS SOURCE LICENSE 1.1 (ADAPTED FOR HORMIGASAIS)
+        
+        COPYRIGHT (C) 2025 CRISTHIAM QUIÑONEZ — HORMIGASAIS
+        
+        PERMISSION IS HEREBY GRANTED TO ANY PERSON TO USE, COPY, MODIFY, OR DISTRIBUTE THE SOFTWARE, UNDER THE CONDITIONS DEFINED BELOW. THE SOFTWARE INCLUDES ALL SOURCE CODE, TESTS, DOCUMENTATION, AND EXAMPLES OF THE XOXO-LBH ADAPTER PROJECT.
+        
+        1. DEFINITIONS
+        
+        
+        
+        "SOFTWARE": THE ENTIRE CONTENT OF THE XOXO-LBH ADAPTER REPOSITORY, INCLUDING ALL FILES, PYTHON CODE, TESTS, EXAMPLES, AND TECHNICAL DOCUMENTATION.
+        
+        "PROHIBITED PRODUCTION USE": ANY USE THAT INVOLVES:
+        
+        1. PERSISTENT M2M EXECUTION: CONTINUOUS (24/7) COMMUNICATION BETWEEN MACHINES, ROBOTS, IOT DEVICES, OR ROS/ROS2 ENVIRONMENTS.
+        
+        
+        2. SECURITY LAYER INTEGRATION: USE OF HMAC FUNCTIONS AND THE SECURITY.PY MODULE TO AUTHENTICATE DATA IN COMMERCIAL OR PRODUCTION ENVIRONMENTS.
+        
+        
+        3. SERVICE SALE: OFFERING THE SOFTWARE OR DERIVATIVE WORKS AS SAAS, PAID API, OR THIRD-PARTY PLATFORM.
+        
+        
+        4. TIERED CORPORATE USE: USE BY SMES, COMPANIES, OR CORPORATIONS ACCORDING TO HORMIGASAIS’ TIERED LICENSING SCHEME.
+        
+        
+        5. LICENSE GRANT
+        
+        
+        
+        THE LICENSOR (CRISTHIAM QUIÑONEZ | HORMIGASAIS) GRANTS THE USER THE RIGHTS TO:
+        
+        COPY, MODIFY, RUN, CREATE DERIVATIVE WORKS, AND DISTRIBUTE THE SOFTWARE, AS LONG AS NONE OF THE PROHIBITED PRODUCTION USES OCCUR.
+        
+        ALLOWED USES INCLUDE:
+        
+        NON-COMMERCIAL DEVELOPMENT, TESTING, BENCHMARKING, AND SIMULATION ENVIRONMENTS (INCLUDING ROS/ROS2).
+        
+        FREEMIUM USE WITHIN THE CONSUMPTION AND PERSISTENCE LIMITS DEFINED BY HORMIGASAIS.
+        
+        
+        PROHIBITED USES WITHOUT COMMERCIAL LICENSE:
+        
+        PERSISTENT M2M EXECUTION IN PRODUCTION.
+        
+        USE OF HMAC AND SECURITY FEATURES IN PRODUCTION ENVIRONMENTS.
+        
+        SELLING THE SOFTWARE AS A SERVICE.
+        
+        TIERED CORPORATE USE BY COMPANIES, SMES, OR CORPORATIONS PER HORMIGASAIS’ LICENSING SCHEME.
+        
+        
+        3. COMMERCIAL LICENSE
+        
+        
+        
+        FOR ANY PROHIBITED PRODUCTION USE, A VALID COMMERCIAL LICENSE FROM HORMIGASAIS IS REQUIRED, UNDER TERMS AND RATES DEFINED IN THE LICENSOR’S TIERED LICENSING SCHEME.
+        
+        4. COPYRIGHT
+        
+        
+        
+        COPYRIGHT © CRISTHIAM QUIÑONEZ | HORMIGASAIS. ANY REDISTRIBUTION OR MODIFICATION MUST INCLUDE THIS BSL 1.1 ADAPTED LICENSE AND CLEAR REFERENCE TO @THRUMANSHOW | HORMIGASAIS.
+        
+        5. NOTES
+        
+        
+        
+        THIS LICENSE ENSURES A BALANCE BETWEEN COMMUNITY USE AND COMMERCIAL PROTECTION, PROMOTING DEVELOPMENT, TESTING, AND LEARNING WHILE MAINTAINING CONTROL OVER CRITICAL OR COMMERCIAL IMPLEMENTATIONS OF THE SOFTWARE.
+        
+        "COLLABORATIVE INTELLIGENCE FOR AN AUTOMATED AND HUMAN-CENTERED FUTURE"
+        
+        
+Project-URL: Homepage, https://github.com/Thrumanshow/xoxo-lbh-adapter
+Project-URL: Repository, https://github.com/Thrumanshow/xoxo-lbh-adapter
+Project-URL: Documentation, https://github.com/Thrumanshow/xoxo-lbh-adapter/wiki
+Keywords: robotics,mqtt,LBH-M2M,adapter,IoT,automation
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt==1.6.1
+Requires-Dist: fastapi==0.111.1
+Requires-Dist: uvicorn==0.23.2
+Requires-Dist: python-dotenv==1.1.1
+Requires-Dist: typing-extensions==4.8.0
+Requires-Dist: cryptography==46.0.3
+Provides-Extra: performance
+Requires-Dist: uvloop==0.17.0; extra == "performance"
+Dynamic: license-file
+Dynamic: requires-python
+
+# XOXO-LBH Adapter
+
+[![License: BSL 1.1 Adapted](https://img.shields.io/badge/License-BSL%201.1%20(HormigasAIS)-blue?style=flat-square&logo=github)](https://github.com/Thrumanshow/xoxo-lbh-adapter/blob/e65f411703bf11f28218bf13fe9ba3928ddf94dd/LICENSE)
+
+**Autor:** Cristhiam Quiñonez — HormigasAIS  
+**Licencia:** BSL 1.1 Adaptada  
+**Objetivo:** Integración de XOXO con LBH-M2M para robots, IoT y comunicación distribuida.
+
+---
+
+## 🔹 Descripción
+
+`XOXO-LBH Adapter` es un paquete Python que permite a **XOXO** integrarse directamente con **LBH-M2M**, habilitando:
+
+- Comunicación **Machine-to-Machine (M2M)** segura y ligera.  
+- Conversión entre **JSON ↔ LBH binario** para intercambio de datos con robots y sensores.  
+- Soporte para el ecosistema HormigasAIS, incluyendo **Freemium/Premium** y herramientas B2B.
+
+Este adapter funciona como **puente inteligente** entre la capa de automatización XOXO y el protocolo LBH-M2M, permitiendo:
+
+- Publicación de comandos a actuadores.  
+- Lectura de datos de sensores en tiempo real.  
+- Validación de integridad mediante **HMAC**.  
+- Preparación para integraciones **JSON-LBH** para clientes B2B.
+
+---
+
+## 🔹 Instalación
+
+### Requisitos
+
+- Python 3.8+  
+- pip  
+- Broker MQTT (ej. Mosquitto)
+
+### Pasos
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/Thrumanshow/xoxo-lbh-adapter.git
+cd xoxo-lbh-adapter
+
+# Instalar en modo editable
+pip install -e .
+
+
+---
+
+🔹 Uso Básico
+
+Inicializar Adapter
+
+from adapter import XOXOAdapter
+
+adapter = XOXOAdapter(broker="localhost", robot_id="robot_test")
+
+Enviar comandos a actuadores
+
+test_payload = {"motor_id": 1, "position": 90, "speed": 120}
+adapter.publish_act(**test_payload)
+
+Leer sensores y convertir a JSON
+
+from adapter import lbh_to_json
+
+def on_data(topic, data):
+    json_data = lbh_to_json(data)
+    print("[Dashboard] Datos decodificados:", json_data)
+
+adapter.set_handler(on_data)
+adapter.loop_start()
+
+
+---
+
+🔹 Estructura del Proyecto
+
+xoxo-lbh-adapter/
+ ├── adapter/
+ │     ├── __init__.py
+ │     ├── core.py
+ │     ├── freemium.py
+ │     ├── json_lbh.py
+ │     └── security.py
+ ├── examples/
+ │     ├── send_command.py
+ │     ├── read_sensor.py
+ │     └── dashboard_listener.py
+ ├── tests/
+ │     ├── test_core.py
+ │     ├── test_json_lbh.py
+ ├── requirements.txt
+ ├── pyproject.toml
+ ├── test_adapter.py
+ └── README.md
+
+
+---
+
+🔹 Objetivo Cumplido
+
+Protocolo Binario LBH-M2M: Encoder y decoder robustos.
+
+Capa de Seguridad HMAC: Integridad y autenticidad de datos M2M.
+
+Integración JSON-LBH: Herramienta lista para clientes B2B.
+
+Soporte Robótica & IoT: Comandos y lectura de sensores vía MQTT.
+
+Preparación para Freemium/Premium: Compatible con botones interactivos LBH.
+
+
+
+---
+
+🔹 Roadmap Futuro
+
+Extensión LBH-SPEC v2.0 completo.
+
+Integración con ROS2 para robótica modular.
+
+Validación avanzada y autogeneración de paquetes LBH desde JSON.
+
+Expansión del soporte Freemium/Premium y mercado B2B.
+
+
+
+---
+
+🔹 Licencia
+
+Este proyecto está bajo la Business Source License 1.1 (BSL 1.1) Adaptada para HormigasAIS.
+"Inteligencia colaborativa para un futuro automatizado y centrado en el ser humano"
