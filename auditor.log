@@ -372,25 +372,6 @@
 📡 Origen: hormigasais/worker_beta/reports
 📊 Datos del Enjambre: {'temp': 29.74, 'status': 'OPERATIONAL', 'timestamp': 1766557578.0099533}
 ----------------------------------------
-✅ Conectado al Broker: localhost📖 [LBH] Contrato cargado | Permisos: {'LBH_ASSIST': True, 'M2M_COMMUNICATION': True, 'SANDBOX_MODE': True}
-📡 Sistema LBH-Secure Activo | Robot: manager_alpha
-🚀 Manager Alpha esperando reportes legitimados...
-✅ Conectado al Broker: localhost
-📥 Escuchando reportes del enjambre...
-
-✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
-📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 25.61, 'status': 'OPERATIONAL', 'timestamp': 1766557482.963836}
-----------------------------------------
-✅ Conectado al Broker: localhost
-📥 Escuchando reportes del enjambre...
-✅ Conectado al Broker: localhost
-📥 Escuchando reportes del enjambre...
-
-✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
-📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 20.55, 'status': 'OPERATIONAL', 'timestamp': 1766557487.9655018}
-----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
 ✅ Conectado al Broker: localhost
@@ -404,7 +385,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 29.47, 'status': 'OPERATIONAL', 'timestamp': 1766557497.9700742}
+📊 Datos del Enjambre: {'temp': 27.77, 'status': 'OPERATIONAL', 'timestamp': 1766557588.0144145}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -419,7 +400,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 29.61, 'status': 'OPERATIONAL', 'timestamp': 1766557507.9781165}
+📊 Datos del Enjambre: {'temp': 22.74, 'status': 'OPERATIONAL', 'timestamp': 1766557598.0172334}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -434,7 +415,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 23.95, 'status': 'OPERATIONAL', 'timestamp': 1766557517.9817398}
+📊 Datos del Enjambre: {'temp': 24.24, 'status': 'OPERATIONAL', 'timestamp': 1766557608.025913}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -449,7 +430,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 27.6, 'status': 'OPERATIONAL', 'timestamp': 1766557527.9881396}
+📊 Datos del Enjambre: {'temp': 28.18, 'status': 'OPERATIONAL', 'timestamp': 1766557618.030744}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -464,7 +445,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 25.73, 'status': 'OPERATIONAL', 'timestamp': 1766557537.99049}
+📊 Datos del Enjambre: {'temp': 26.81, 'status': 'OPERATIONAL', 'timestamp': 1766557628.033293}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -479,7 +460,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 26.07, 'status': 'OPERATIONAL', 'timestamp': 1766557547.996148}
+📊 Datos del Enjambre: {'temp': 25.37, 'status': 'OPERATIONAL', 'timestamp': 1766557638.0380175}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -494,7 +475,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 29.48, 'status': 'OPERATIONAL', 'timestamp': 1766557558.0008605}
+📊 Datos del Enjambre: {'temp': 24.06, 'status': 'OPERATIONAL', 'timestamp': 1766557648.0411625}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -513,7 +494,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 22.19, 'status': 'OPERATIONAL', 'timestamp': 1766557573.0090816}
+📊 Datos del Enjambre: {'temp': 25.32, 'status': 'OPERATIONAL', 'timestamp': 1766557663.051593}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -528,7 +509,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 20.9, 'status': 'OPERATIONAL', 'timestamp': 1766557583.0118666}
+📊 Datos del Enjambre: {'temp': 27.15, 'status': 'OPERATIONAL', 'timestamp': 1766557673.0560222}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -543,7 +524,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 21.02, 'status': 'OPERATIONAL', 'timestamp': 1766557593.0157096}
+📊 Datos del Enjambre: {'temp': 24.11, 'status': 'OPERATIONAL', 'timestamp': 1766557683.060141}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -558,7 +539,7 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
-📊 Datos del Enjambre: {'temp': 22.24, 'status': 'OPERATIONAL', 'timestamp': 1766557603.0229812}
+📊 Datos del Enjambre: {'temp': 21.8, 'status': 'OPERATIONAL', 'timestamp': 1766557693.0678782}
 ----------------------------------------
 ✅ Conectado al Broker: localhost
 📥 Escuchando reportes del enjambre...
@@ -573,3 +554,226 @@
 
 ✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
 📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.57, 'status': 'OPERATIONAL', 'timestamp': 1766557703.0747676}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.1, 'status': 'OPERATIONAL', 'timestamp': 1766557713.080238}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhostts
+📊 Datos del Enjambre: {'temp': 27.13, 'status': 'OPERATIONAL', 'timestamp': 1766557613.0272691}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.19, 'status': 'OPERATIONAL', 'timestamp': 1766557623.0320928}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.42, 'status': 'OPERATIONAL', 'timestamp': 1766557633.035454}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.48, 'status': 'OPERATIONAL', 'timestamp': 1766557643.0392628}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.39, 'status': 'OPERATIONAL', 'timestamp': 1766557653.043882}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.41, 'status': 'OPERATIONAL', 'timestamp': 1766557658.0480137}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.26, 'status': 'OPERATIONAL', 'timestamp': 1766557668.0541735}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.43, 'status': 'OPERATIONAL', 'timestamp': 1766557678.058591}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.77, 'status': 'OPERATIONAL', 'timestamp': 1766557688.0635643}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.64, 'status': 'OPERATIONAL', 'timestamp': 1766557698.0716853}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.75, 'status': 'OPERATIONAL', 'timestamp': 1766557708.07783}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.47, 'status': 'OPERATIONAL', 'timestamp': 1766557718.0823278}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.57, 'status': 'OPERATIONAL', 'timestamp': 1766557728.0848055}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.47, 'status': 'OPERATIONAL', 'timestamp': 1766557738.0885515}
+----------------------------------------
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
