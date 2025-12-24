@@ -1,0 +1,539 @@
+📖 [LBH] Contrato cargado | Permisos: {'LBH_ASSIST': True, 'M2M_COMMUNICATION': True, 'SANDBOX_MODE': True}
+📡 Sistema LBH-Secure Activo | Robot: manager_alpha
+🚀 Manager Alpha esperando reportes legitimados...
+✅ Conectado al Broker: localhost
+📥 Escuchando reportes del enjambre...
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.78, 'status': 'OPERATIONAL', 'timestamp': 1766555136.8766994}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.7, 'status': 'OPERATIONAL', 'timestamp': 1766555141.8806982}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.49, 'status': 'OPERATIONAL', 'timestamp': 1766555146.8836415}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.7, 'status': 'OPERATIONAL', 'timestamp': 1766555151.8869874}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.15, 'status': 'OPERATIONAL', 'timestamp': 1766555156.889139}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.48, 'status': 'OPERATIONAL', 'timestamp': 1766555161.89123}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.16, 'status': 'OPERATIONAL', 'timestamp': 1766555166.894029}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.34, 'status': 'OPERATIONAL', 'timestamp': 1766555171.8978193}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.2, 'status': 'OPERATIONAL', 'timestamp': 1766555176.9012067}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.25, 'status': 'OPERATIONAL', 'timestamp': 1766555181.9026878}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.99, 'status': 'OPERATIONAL', 'timestamp': 1766555186.9043486}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.29, 'status': 'OPERATIONAL', 'timestamp': 1766555191.9060538}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.04, 'status': 'OPERATIONAL', 'timestamp': 1766555196.907865}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.5, 'status': 'OPERATIONAL', 'timestamp': 1766555201.9105747}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.26, 'status': 'OPERATIONAL', 'timestamp': 1766555206.913489}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.27, 'status': 'OPERATIONAL', 'timestamp': 1766555211.9157345}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.47, 'status': 'OPERATIONAL', 'timestamp': 1766555216.9176714}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.62, 'status': 'OPERATIONAL', 'timestamp': 1766555221.9204633}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.91, 'status': 'OPERATIONAL', 'timestamp': 1766555226.9234622}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.31, 'status': 'OPERATIONAL', 'timestamp': 1766555231.9248364}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.94, 'status': 'OPERATIONAL', 'timestamp': 1766555236.9266703}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.26, 'status': 'OPERATIONAL', 'timestamp': 1766555241.929173}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.61, 'status': 'OPERATIONAL', 'timestamp': 1766555246.9307811}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.78, 'status': 'OPERATIONAL', 'timestamp': 1766555251.9329455}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.29, 'status': 'OPERATIONAL', 'timestamp': 1766555256.9355633}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.54, 'status': 'OPERATIONAL', 'timestamp': 1766555261.9370644}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.39, 'status': 'OPERATIONAL', 'timestamp': 1766555266.939934}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.59, 'status': 'OPERATIONAL', 'timestamp': 1766555271.942567}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.85, 'status': 'OPERATIONAL', 'timestamp': 1766555276.946336}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.42, 'status': 'OPERATIONAL', 'timestamp': 1766555281.9501998}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.82, 'status': 'OPERATIONAL', 'timestamp': 1766555286.9520738}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.52, 'status': 'OPERATIONAL', 'timestamp': 1766555291.9541218}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.83, 'status': 'OPERATIONAL', 'timestamp': 1766555296.956603}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.08, 'status': 'OPERATIONAL', 'timestamp': 1766555301.9578507}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.71, 'status': 'OPERATIONAL', 'timestamp': 1766555306.9600484}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.66, 'status': 'OPERATIONAL', 'timestamp': 1766555311.9614134}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.13, 'status': 'OPERATIONAL', 'timestamp': 1766555316.965464}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.44, 'status': 'OPERATIONAL', 'timestamp': 1766555321.9692996}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.8, 'status': 'OPERATIONAL', 'timestamp': 1766555326.9715767}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.58, 'status': 'OPERATIONAL', 'timestamp': 1766555331.97525}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.29, 'status': 'OPERATIONAL', 'timestamp': 1766555336.9762695}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.89, 'status': 'OPERATIONAL', 'timestamp': 1766555341.9777043}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.08, 'status': 'OPERATIONAL', 'timestamp': 1766555346.979598}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.23, 'status': 'OPERATIONAL', 'timestamp': 1766555351.9843645}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.98, 'status': 'OPERATIONAL', 'timestamp': 1766555356.989169}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.44, 'status': 'OPERATIONAL', 'timestamp': 1766555361.9933443}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.31, 'status': 'OPERATIONAL', 'timestamp': 1766555366.9954865}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.23, 'status': 'OPERATIONAL', 'timestamp': 1766555371.9984667}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.05, 'status': 'OPERATIONAL', 'timestamp': 1766555377.0001538}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.59, 'status': 'OPERATIONAL', 'timestamp': 1766555382.0019028}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.24, 'status': 'OPERATIONAL', 'timestamp': 1766555387.0049586}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.56, 'status': 'OPERATIONAL', 'timestamp': 1766555392.009122}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.15, 'status': 'OPERATIONAL', 'timestamp': 1766555397.013496}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.66, 'status': 'OPERATIONAL', 'timestamp': 1766555402.0147064}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.88, 'status': 'OPERATIONAL', 'timestamp': 1766555407.0159926}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.95, 'status': 'OPERATIONAL', 'timestamp': 1766555412.0173254}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.14, 'status': 'OPERATIONAL', 'timestamp': 1766555417.0182128}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.67, 'status': 'OPERATIONAL', 'timestamp': 1766555422.0193982}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.83, 'status': 'OPERATIONAL', 'timestamp': 1766555427.0201883}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.26, 'status': 'OPERATIONAL', 'timestamp': 1766555432.022223}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.51, 'status': 'OPERATIONAL', 'timestamp': 1766555437.0243008}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.2, 'status': 'OPERATIONAL', 'timestamp': 1766555442.0259056}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.42, 'status': 'OPERATIONAL', 'timestamp': 1766555447.027081}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.24, 'status': 'OPERATIONAL', 'timestamp': 1766555452.0283928}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.75, 'status': 'OPERATIONAL', 'timestamp': 1766555457.0326056}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.82, 'status': 'OPERATIONAL', 'timestamp': 1766555462.0346434}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.69, 'status': 'OPERATIONAL', 'timestamp': 1766555467.036775}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.24, 'status': 'OPERATIONAL', 'timestamp': 1766555472.0401206}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.76, 'status': 'OPERATIONAL', 'timestamp': 1766555477.0434413}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.4, 'status': 'OPERATIONAL', 'timestamp': 1766555482.047923}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.48, 'status': 'OPERATIONAL', 'timestamp': 1766555487.0538254}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.02, 'status': 'OPERATIONAL', 'timestamp': 1766555492.055126}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.64, 'status': 'OPERATIONAL', 'timestamp': 1766555497.0568576}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.41, 'status': 'OPERATIONAL', 'timestamp': 1766555502.0575085}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.36, 'status': 'OPERATIONAL', 'timestamp': 1766555507.058837}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.23, 'status': 'OPERATIONAL', 'timestamp': 1766555512.0595422}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.63, 'status': 'OPERATIONAL', 'timestamp': 1766555517.0617082}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.22, 'status': 'OPERATIONAL', 'timestamp': 1766555522.0653355}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.05, 'status': 'OPERATIONAL', 'timestamp': 1766555527.0667613}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.15, 'status': 'OPERATIONAL', 'timestamp': 1766555532.0685523}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.49, 'status': 'OPERATIONAL', 'timestamp': 1766555537.0692296}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.94, 'status': 'OPERATIONAL', 'timestamp': 1766555542.0708935}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 25.05, 'status': 'OPERATIONAL', 'timestamp': 1766555547.0720127}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.33, 'status': 'OPERATIONAL', 'timestamp': 1766555552.0741584}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.33, 'status': 'OPERATIONAL', 'timestamp': 1766555557.0749142}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.66, 'status': 'OPERATIONAL', 'timestamp': 1766555562.0758193}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.1, 'status': 'OPERATIONAL', 'timestamp': 1766555567.0766854}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.41, 'status': 'OPERATIONAL', 'timestamp': 1766555572.077526}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.95, 'status': 'OPERATIONAL', 'timestamp': 1766555577.0791302}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.38, 'status': 'OPERATIONAL', 'timestamp': 1766555582.0820265}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.12, 'status': 'OPERATIONAL', 'timestamp': 1766555587.083558}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.14, 'status': 'OPERATIONAL', 'timestamp': 1766555592.08647}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.52, 'status': 'OPERATIONAL', 'timestamp': 1766555597.0896668}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 20.24, 'status': 'OPERATIONAL', 'timestamp': 1766555602.0935457}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 29.85, 'status': 'OPERATIONAL', 'timestamp': 1766555607.0981104}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.19, 'status': 'OPERATIONAL', 'timestamp': 1766555612.1067176}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 24.27, 'status': 'OPERATIONAL', 'timestamp': 1766555617.1080658}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.82, 'status': 'OPERATIONAL', 'timestamp': 1766555622.1098096}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 27.01, 'status': 'OPERATIONAL', 'timestamp': 1766555627.1106634}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.27, 'status': 'OPERATIONAL', 'timestamp': 1766555632.116808}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 21.92, 'status': 'OPERATIONAL', 'timestamp': 1766555637.1175635}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 28.11, 'status': 'OPERATIONAL', 'timestamp': 1766555642.118391}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.97, 'status': 'OPERATIONAL', 'timestamp': 1766555647.1199076}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 23.52, 'status': 'OPERATIONAL', 'timestamp': 1766555652.1227505}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.51, 'status': 'OPERATIONAL', 'timestamp': 1766555657.1245072}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 22.15, 'status': 'OPERATIONAL', 'timestamp': 1766555662.1273398}
+----------------------------------------
+
+✅ [MANAGER] MENSAJE VALIDADO Y RECIBIDO
+📡 Origen: hormigasais/worker_beta/reports
+📊 Datos del Enjambre: {'temp': 26.4, 'status': 'OPERATIONAL', 'timestamp': 1766555667.128663}
