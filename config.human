@@ -1,64 +1,16 @@
-# ==========================================
-# CONTRATO HUMANO - HORMIGASAIS LBH v1.2
-# Archivo: config.human
-# Ubicación: /contracts/config/config.human
-# Autoridad: HUMANO
-# Declaración: Todas las acciones críticas solo pueden ser modificadas o interrumpidas por el humano autorizado.
-# ==========================================
+# ========================================== #
+# CONTRATO HUMANO - HORMIGASAIS LBH v1.2     #
+# Autoridad: HUMANO (Cristhiam Leonardo)     #
+# ========================================== #
 
 [HUMAN]
 id = "human_root"
 authority = true
-override = true
-description = "El humano tiene control absoluto sobre el enjambre, pudiendo modificar permisos, roles y detener cualquier robot que viole el contrato."
 
 [SWARM]
 name = "HormigasAIS"
-mode = "cooperative"
-telemetry_topic = "hormigasais/swarm/telemetry"
-audit_enabled = true
-intervention_allowed = true
-critical_actions_locked = true
+STOP_H_PROT = false
 
-# --- ACCIONES CRÍTICAS ---
 [CRITICAL_ACTIONS]
 shutdown_robot = true
-modify_roles = true
-override_permissions = true
-access_sensitive_data = true
 force_stop_task = true
-
-# --- PERMISOS GLOBALES (fallback) ---
-[PERMISSIONS]
-LBH_ASSIST = true
-M2M_COMMUNICATION = true
-SANDBOX_MODE = true
-GOVERNANCE = false
-
-# --- ROLES DEFINIDOS ---
-[ROLE:ALPHA]
-LBH_ASSIST = true
-M2M_COMMUNICATION = true
-SANDBOX_MODE = false
-GOVERNANCE = true
-description = "Supervisor principal, puede ejecutar tareas críticas bajo control humano."
-
-[ROLE:BETA]
-LBH_ASSIST = true
-M2M_COMMUNICATION = true
-SANDBOX_MODE = true
-GOVERNANCE = false
-description = "Worker colaborativo, limitado en acciones críticas."
-
-[ROLE:GAMMA]
-LBH_ASSIST = false
-M2M_COMMUNICATION = true
-SANDBOX_MODE = true
-GOVERNANCE = false
-description = "Worker básico, sin permisos críticos ni supervisión de gobernanza."
-
-# --- SEGURIDAD ---
-[SECURITY]
-MASTER_KEY_REF = "swarm/security/lbh_config.key"
-REQUIRED_SIGNATURE = "HMAC_SHA256"
-audit_log_enabled = true

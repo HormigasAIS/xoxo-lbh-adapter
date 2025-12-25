@@ -1,27 +1,21 @@
-# pheromone_bus.py
-
 import time
 
-STOP_H_PROT = False  # leído desde config.human (en siguiente paso)
-
 def is_stop_active():
-    return STOP_H_PROT
-
-def emit_pheromone(pheromone):
-    if is_stop_active():
-        print("🛑 LBH FREEZE: emisión bloqueada por contrato humano")
+    try:
+        with open("config.human", "r") as f:
+            contenido = f.read().lower()
+            return "stop_h_prot = true" in contenido
+    except FileNotFoundError:
         return False
 
-    # Emisión normal
-    print(f"🌸 Feromona aceptada: {pheromone['type']}")
+def emit_pheromone(type_name):
+    if is_stop_active():
+        print("🛑 LBH FREEZE: Emisión bloqueada por Contrato Humano.")
+        return False
+    print(f"🌸 Feromona '{type_name}' aceptada.")
     return True
 
-def listen_pheromones():
-    while True:
-        if is_stop_active():
-            print("🧊 Enjambre congelado (STOP_H_PROT activo)")
-            time.sleep(5)
-            continue
-
-        # Escucha normal
-        time.sleep(2)
+if __name__ == "__main__":
+    # Prueba de vida del bus
+    print("📡 Bus de Feromonas LBH Iniciado...")
+    emit_pheromone("Sistema_Soberano")
