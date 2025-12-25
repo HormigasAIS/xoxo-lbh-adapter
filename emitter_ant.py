@@ -1,34 +1,20 @@
 #!/usr/bin/env python3
-"""
-Emitter Ant (LBH)
-Emite feromonas suaves de ayuda al enjambre
-(no dicta acciones, solo comunica estado)
-"""
-
 import time
-import time as _time
 from pheromone_bus import emit_pheromone
 
-print("🐜 Emitter Ant activa (LBH)")
+# Coordenadas de Operación: San Miguel, El Salvador
+GEO_LOC = {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}
 
-def emitter_loop(interval=3, beats=10):
-    for i in range(beats):
-        pheromone = {
-            "type": "HEAT",                 # tipo canónico
-            "level": 0.35,                  # intensidad suave (olor, no alarma)
-            "source": "emitter_ant",
-            "intent": "assist_swarm",
-            "confidence": 0.42,
-            "ttl": 30,                      # segundos de vida
-            "timestamp": int(_time.time()),
-            "lbh_compliant": True
-        }
-
-        emit_pheromone(pheromone)
-        print(f"🧪 Feromona fragante emitida #{i+1}")
-        time.sleep(interval)
-
-    print("✅ Emisión completada. Hormiga en reposo.")
+def emitter_loop():
+    print(f"🌍 Emitter Ant Localizada en: {GEO_LOC['city']}, {GEO_LOC['country']}")
+    for i in range(10):
+        # Inyectamos la ubicación en la feromona de asistencia
+        emit_pheromone('cooling_hint', 0.42, origin='emitter_ant_geo')
+        # Emitimos pulso de ubicación para el mapa del Dashboard
+        emit_pheromone('geo_pulse', GEO_LOC, origin='satelital')
+        
+        print(f"🛰️ Pulso geográfico #{i+1} emitido desde el Nodo SV")
+        time.sleep(5)
 
 if __name__ == "__main__":
     emitter_loop()

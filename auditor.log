@@ -267029,3 +267029,23 @@ FEROMONA_CALOR_DETECTADA
 📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635258.154725, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant", "protocol": "LBH-2025"}
 📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635261.1555085, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant", "protocol": "LBH-2025"}
 📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635264.15656, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635906.472002, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635906.4729483, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635911.473785, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635911.474358, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635916.475349, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635916.4760294, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635921.476839, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635921.477503, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635926.47853, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635926.479303, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635931.4799705, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635931.4812777, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635936.4822838, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635936.4838839, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635941.4850245, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635941.486353, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635946.4878569, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635946.4891968, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635951.490526, "type": "cooling_hint", "value": 0.42, "origin": "emitter_ant_geo", "protocol": "LBH-2025"}
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766635951.4919655, "type": "geo_pulse", "value": {"lat": 13.4833, "lon": -88.1833, "city": "San Miguel", "country": "SV"}, "origin": "satelital", "protocol": "LBH-2025"}
