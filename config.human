@@ -1,16 +1,54 @@
-# ========================================== #
-# CONTRATO HUMANO - HORMIGASAIS LBH v1.2     #
-# Autoridad: HUMANO (Cristhiam Leonardo)     #
-# ========================================== #
+# =======================================>
+# CONTRATO HUMANO - HORMIGASAIS LBH v1.2  >
+# Autoridad: HUMANO (Cristhiam Leonardo) >
+# Modo: Control contractual reversible   >
+# =======================================>
 
 [HUMAN]
 id = "human_root"
 authority = true
+signature = "HORMIGASAIS::HUMAN::ROOT"
+last_update = "2025-12-24T20:55:00Z"
 
 [SWARM]
 name = "HormigasAIS"
+
+# ---- CONTROL GLOBAL DEL ENJAMBRE ----
+# false = enjambre activo
+# true  = enjambre en pausa segura (LBH)
 STOP_H_PROT = false
 
+# Metadatos del estado
+STOP_REASON = "resume_by_human"
+STOP_TIMESTAMP = null
+
 [CRITICAL_ACTIONS]
+# Acciones permitidas SOLO si STOP_H_PROT = true
 shutdown_robot = true
 force_stop_task = true
+freeze_automation = true
+
+[LBH_POLICY]
+mode = "contractual"
+resilience = true
+no_pkill = true
+human_override = true
+audit_enabled = true
+
+[PHEROMONE_BUS]
+enabled = true
+mode = "soft_signal"
+accept_fragant = true
+accept_cooling_hint = true
+buffer_limit = 128
+
+[GOVERNORS]
+cooling_governor = true
+energy_governor = false
+ethics_governor = true
+
+[LOGGING]
+level = "INFO"
+contract_events = true
+pheromone_events = true
+path = "./logs/lbh_events.log"
