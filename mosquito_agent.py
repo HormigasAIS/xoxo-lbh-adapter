@@ -1,8 +1,10 @@
 import time
 import json
+import sys
 
 def emit_pulse():
-    print("🦟 [XOXO-MOSQUITO] Iniciando vuelo bajo Protocolo LBH-2025...")
+    print("🦟 [XOXO-MOSQUITO] Vuelo Maestro Iniciado - Protocolo LBH-2025")
+    sys.stdout.flush() 
     while True:
         payload = {
             "timestamp": time.time(),
@@ -11,8 +13,8 @@ def emit_pulse():
             "status": "active",
             "mode": "master"
         }
-        # Aquí se simula la integración con el bus
         print(f"📡 [XOXO-BUS] FEROMONA_EMITIDA: {json.dumps(payload)}")
+        sys.stdout.flush()
         time.sleep(10)
 
 if __name__ == "__main__":
