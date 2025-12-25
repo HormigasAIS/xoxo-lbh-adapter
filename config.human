@@ -19,11 +19,11 @@ name = "HormigasAIS"
 STOP_H_PROT = false
 
 # Metadatos del estado
-STOP_REASON = "resume_by_human"
+STOP_REASON = "resume_by_lbh"
 STOP_TIMESTAMP = null
 
 [CRITICAL_ACTIONS]
-# Acciones permitidas SOLO si STOP_H_PROT = true
+# Acciones permitidas SOLO si STOP_H_PROT = false
 shutdown_robot = true
 force_stop_task = true
 freeze_automation = true
