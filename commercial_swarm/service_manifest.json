@@ -1,0 +1,7 @@
+{
+    "service_name": "LBH-Commercial-Swarm",
+    "version": "1.0.0-PROD",
+    "capabilities": ["freemium_validation", "premium_reports", "lbh_metadata_gen"],
+    "security_level": "isolated-gateway",
+    "endpoint_type": "M2M"
+}
