@@ -10,7 +10,7 @@ def emit_pulse():
             "timestamp": time.time(),
             "type": "mosquito_pulse",
             "origin": "manager_alpha",
-            "status": "active",
+            "status": "active", "lbh_sign": "01001100",
             "mode": "master"
         }
         print(f"📡 [XOXO-BUS] FEROMONA_EMITIDA: {json.dumps(payload)}")
