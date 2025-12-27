@@ -1,42 +1,43 @@
 import subprocess
 import time
 import os
-import socket
-
-def is_port_in_use(port):
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        return s.connect_ex(('127.0.0.1', port)) == 0
+import sys
 
 def start_colony():
     PORT = 37335
-    LOG_FILE = "gateway.log"
-    # Sincronización de rutas para el borde
+    # Aseguramos que use el Python del venv actual
+    python_bin = sys.executable
     os.environ["PYTHONPATH"] = os.getcwd()
+    
+    print(f"🐜 [HormigasAIS] Orquestando desde Entorno Virtual...")
+    
+    # Limpieza de seguridad
+    subprocess.run("pkill -9 -f uvicorn", shell=True, stderr=subprocess.DEVNULL)
+    time.sleep(1)
 
-    print(f"🐜 [HormigasAIS] Iniciando orquestación en el borde...")
-
-    # 1. Limpieza de procesos previos
-    if is_port_in_use(PORT):
-        print(f"⚠️ Puerto {PORT} ocupado. Limpiando...")
-        subprocess.run("pkill -9 -f uvicorn", shell=True)
-        time.sleep(2)
-
-    # 2. Comando de ejecución (LBH Gateway)
     cmd = [
-        "python3", "-m", "uvicorn",
-        "adapter.bots.bot_gateway:app",
-        "--host", "127.0.0.1",
-        "--port", str(PORT)
+        python_bin, "-m", "uvicorn", 
+        "adapter.bots.bot_gateway.app", # Nota el cambio a punto si es módulo
+        "--host", "127.0.0.1", 
+        "--port", str(PORT),
+        "--log-level", "info"
     ]
 
-    with open(LOG_FILE, "w") as log:
+    # Si falla como módulo, intentamos como ruta de archivo (Resiliencia LBH)
+    with open("gateway.log", "w") as log:
         process = subprocess.Popen(cmd, stdout=log, stderr=log)
-        time.sleep(2) # Espera de estabilización
+        time.sleep(3)
+        
+        if process.poll() is not None:
+            # Reintento alternativo de ruta
+            cmd[3] = "adapter.bots.bot_gateway:app"
+            process = subprocess.Popen(cmd, stdout=log, stderr=log)
+            time.sleep(2)
+
         if process.poll() is None:
-            print(f"🚀 Gateway en línea (PID: {process.pid}).")
-            print(f"📡 Monitoreando rastro en: {LOG_FILE}")
+            print(f"🚀 Gateway SOBERANO activo (PID: {process.pid})")
         else:
-            print("❌ Error al iniciar. Verifique gateway.log")
+            print("❌ Error. Revise 'cat gateway.log' para diagnóstico.")
 
 if __name__ == "__main__":
     start_colony()
