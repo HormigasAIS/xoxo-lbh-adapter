@@ -1,9 +1,10 @@
 from fastapi import FastAPI, Request
 import httpx
 
-# --- AJUSTE SOBERANO ---
-BOT_TOKEN = "SU_TOKEN_AQUI" 
-MASTER_CHAT_ID = "8463843180"
+# --- CREDENCIALES EXTRAÍDAS DE CAPTURAS ---
+BOT_TOKEN = "8539663975:AAHOujZ97fKHeOk2Y79DcjfBuKDUcfjGihA"
+# IMPORTANTE: Reemplace este ID si 8463843180 es el del bot y no el suyo personal
+MASTER_CHAT_ID = "8463843180" 
 
 app = FastAPI()
 
@@ -16,7 +17,7 @@ async def lbh_event(req: Request):
             url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
             resp = await client.post(url, json={
                 "chat_id": MASTER_CHAT_ID, 
-                "text": f"🛡️ *HormigasAIS*\n{msg}",
+                "text": f"🛡️ *HormigasAIS: Nodo San Miguel*\n\n{msg}",
                 "parse_mode": "Markdown"
             })
             return resp.json()
