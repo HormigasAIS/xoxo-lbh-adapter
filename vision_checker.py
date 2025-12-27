@@ -4,7 +4,7 @@ import requests
 from PIL import Image, ImageChops
 
 # Sintonización con el Nodo Maestro
-NODE_URL = "http://127.0.0.1:32985/v1/event"
+NODE_URL = "http://127.0.0.1:37335/webhook/lbh"
 
 def detect_motion():
     print("🐜 [HormigasAIS] Centinela de Visión Ligera Iniciado...")
