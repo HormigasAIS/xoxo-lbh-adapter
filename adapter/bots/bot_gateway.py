@@ -1,10 +1,9 @@
 from fastapi import FastAPI, Request
 import httpx
 
-# --- CREDENCIALES EXTRAÍDAS DE CAPTURAS ---
-BOT_TOKEN = "8539663975:AAHOujZ97fKHeOk2Y79DcjfBuKDUcfjGihA"
-# IMPORTANTE: Reemplace este ID si 8463843180 es el del bot y no el suyo personal
-MASTER_CHAT_ID = "8463843180" 
+# --- CONFIGURACIÓN SOBERANA DEFINITIVA ---
+BOT_TOKEN = "8539663975:AAHOujZ97fKHeOk2Y79DcjfBuKDUcfjGihA" 
+MASTER_CHAT_ID = "8463843180"
 
 app = FastAPI()
 
