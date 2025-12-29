@@ -1,37 +1,33 @@
 # -*- coding: utf-8 -*-
 # 🐜 HormigasAIS - Health & Integrity Agent (Nivel 3)
-# DELEGACIÓN OFICIAL: Cristhiam Leonardo Hernández Quiñonez
+# DELEGACIÓN: Cristhiam Leonardo Hernández Quiñonez
 
 import os
 
 class HealthAntL3:
     def __init__(self):
         self.fundador = "Cristhiam Leonardo Hernández Quiñonez"
-        # Definimos las rutas posibles donde puede estar el contrato de gobernanza
-        self.rutas_posibles = [
-            "contracts/config/lbh.human",
-            "./contracts/config/lbh.human",
-            "../contracts/config/lbh.human",
-            "config.human"
-        ]
-        self.status = "INIT"
+        self.contrato_maestro = "contracts/config/lbh.human"
+        self.config_vinculacion = "contracts/config/config.human"
 
-    def validar_autoridad(self):
-        for ruta in self.rutas_posibles:
-            if os.path.exists(ruta):
-                with open(ruta, 'r') as f:
-                    content = f.read()
-                    if "LEVEL = L3" in content and self.fundador in content:
-                        print(f"📌 Contrato validado en: {ruta}")
-                        return True
+    def verificar_integridad(self):
+        print(f"🔍 [Health_Ant] Iniciando escaneo de gobernanza para: {self.fundador}")
+        
+        if os.path.exists(self.contrato_maestro):
+            with open(self.contrato_maestro, 'r') as f:
+                content = f.read()
+                if "LEVEL = L3" in content and self.fundador in content:
+                    print(f"✅ [OK] Contrato Maestro validado en: {self.contrato_maestro}")
+                    return True
+        
+        print("🚨 [ALERTA] Fallo de integridad o contrato no encontrado.")
         return False
 
-    def monitorear_vitales(self):
-        if self.validar_autoridad():
-            print(f"✅ [AUTORIZADO] Ejecución delegada por {self.fundador} confirmada.")
-            print("🟢 [STATUS] Signos vitales estables. Nivel 3 LBH-GOLD verificado.")
+    def ejecutar(self):
+        if self.verificar_integridad():
+            print("🟢 [STATUS] Sistema LBH-GOLD operando bajo normas del Fundador.")
         else:
-            print(f"🚨 [ALERTA] Fallo de integridad: No se encontró el contrato L3 de {self.fundador}.")
+            print("❌ [CRITICAL] Operación detenida: No se reconoce la autoridad L3.")
 
 if __name__ == "__main__":
-    HealthAntL3().monitorear_vitales()
+    HealthAntL3().ejecutar()
