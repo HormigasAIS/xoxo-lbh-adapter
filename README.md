@@ -1,14 +1,15 @@
 # 🐜 HormigasAIS - XOXO-LBH Adapter
-### 📡 Interfaz de Visualización y Auditoría Inalterable
 
+### 🛰️ Telemetría en Tiempo Real (Nivel 3)
+![Pulso del Enjambre](rendimiento.png)
+
+## 📡 Interfaz de Visualización y Auditoría Inalterable
 Este nodo actúa como el puente de telemetría para la colonia, traduciendo eventos del **Nodo XOXO-** bajo el protocolo **LBH (Lenguaje Binary HormigasAIS)**.
-
----
 
 ## 📊 Estado de la Interfaz
 * **Estado:** 🔵 Sincronizado con Nodo Núcleo (Nivel 3)
-* **Visualizador:** [Live Dashboard](https://thrumanshow.github.io/xoxo-lbh-adapter/)
-* **Gobernanza:** [lbh.human](https://lbh.human) (**Cristhiam Leonardo Hernández Quiñonez**)
+* **Visualizador:** Live Dashboard Activo
+* **Gobernanza:** [lbh.human](https://lbh.human) (Cristhiam Leonardo Hernández Quiñonez)
 * **Protocolo de Agentes:** Contrato-Agents
 
 ## 🛡️ Seguridad de Datos
