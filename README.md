@@ -1,14 +1,16 @@
-# 🐜 HormigasAIS - Ecosistema de Inteligencia de Enjambre
+# 🐜 xoxo-lbh-adapter
+🛡️ **Puente de Inteligencia Distribuida Soberana**
 
-## 📊 Tablero de Control de Activos (Real-Time)
-Este repositorio gestiona la auditoría inalterable de datos validados mediante el protocolo LBH y firmas HMAC-2025.
+Este repositorio actúa como el Adapter visual de la Colonia HormigasAIS. 
+Los datos aquí presentados son validados por el **Nodo Escuela** bajo protocolo LBH.
 
-![Rendimiento del Enjambre](./REPORTE_RENDIMIENTO_HORMIGAS.png)
+### 📊 Pulso en Tiempo Real (Hormiga 07)
+![Rendimiento del Enjambre](REPORTE_RENDIMIENTO_HORMIGAS.png)
 
-### 🛠️ Especificaciones Técnicas
-* **Seguridad:** Firmas digitales HMAC-SHA256.
-* **Gobernanza:** Contratos Humanos LBH (Human-in-the-loop).
-* **Almacenamiento:** Auditoría persistente en CSV sincronizada con GitHub.
+### ⚙️ Estado del Sistema
+- **Protocolo:** LBH SOBERANO
+- **Firma Raíz:** Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+- **Estado:** ✅ ANTIFRÁGIL
 
 ---
-*Generado automáticamente por el Nodo Maestro HormigasAIS.*
+*San Miguel, El Salvador | 2025-12-28*
