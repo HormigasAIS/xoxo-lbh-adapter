@@ -9,7 +9,7 @@ Este nodo actúa como el puente de telemetría para la colonia, traduciendo even
 ## 📊 Estado de la Interfaz
 * **Estado:** 🔵 Sincronizado con Nodo Núcleo (Nivel 3)
 * **Visualizador:** Live Dashboard Activo
-* **Gobernanza:** [lbh.human](https://lbh.human) (Cristhiam Leonardo Hernández Quiñonez)
+* **Gobernanza:** [lbh.human](https://github.com/Thrumanshow/xoxo-lbh-adapter/blob/dbc862e1eb4df7ac1aa0462f235e13c3a5f368d4/contracts/config/lbh.human) (Cristhiam Leonardo Hernández Quiñonez)
 * **Protocolo de Agentes:** Contrato-Agents
 
 ## 🛡️ Seguridad de Datos
