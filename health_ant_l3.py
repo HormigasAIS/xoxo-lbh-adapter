@@ -7,15 +7,23 @@ import os
 class HealthAntL3:
     def __init__(self):
         self.fundador = "Cristhiam Leonardo Hernández Quiñonez"
-        self.contrato_raiz = "contracts/config/lbh.human"
+        # Definimos las rutas posibles donde puede estar el contrato de gobernanza
+        self.rutas_posibles = [
+            "contracts/config/lbh.human",
+            "./contracts/config/lbh.human",
+            "../contracts/config/lbh.human",
+            "config.human"
+        ]
         self.status = "INIT"
 
     def validar_autoridad(self):
-        if os.path.exists(self.contrato_raiz):
-            with open(self.contrato_raiz, 'r') as f:
-                content = f.read()
-                if "LEVEL = L3" in content and self.fundador in content:
-                    return True
+        for ruta in self.rutas_posibles:
+            if os.path.exists(ruta):
+                with open(ruta, 'r') as f:
+                    content = f.read()
+                    if "LEVEL = L3" in content and self.fundador in content:
+                        print(f"📌 Contrato validado en: {ruta}")
+                        return True
         return False
 
     def monitorear_vitales(self):
@@ -23,7 +31,7 @@ class HealthAntL3:
             print(f"✅ [AUTORIZADO] Ejecución delegada por {self.fundador} confirmada.")
             print("🟢 [STATUS] Signos vitales estables. Nivel 3 LBH-GOLD verificado.")
         else:
-            print("🚨 [ALERTA] Fallo de integridad: Contrato raíz no válido.")
+            print(f"🚨 [ALERTA] Fallo de integridad: No se encontró el contrato L3 de {self.fundador}.")
 
 if __name__ == "__main__":
     HealthAntL3().monitorear_vitales()
