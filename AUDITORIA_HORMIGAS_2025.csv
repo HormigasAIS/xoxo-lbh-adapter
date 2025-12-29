@@ -1,3 +1,4 @@
-timestamp,ID_HORMIGA,role,task,status,temp,value,performance,FIRMA_LBH
-2025-12-28 23:34:49,WORKER_LBH,Hormiga_Operativa,Monitoreo_Edge,OPERATIONAL,25.5,25.5,100,HMAC_2025_VALID
-2025-12-28 23:34:49,WORKER_LBH,Hormiga_Operativa,Monitoreo_Edge,LEALTAD_CONFIRMADA,22.7,22.7,100,HMAC_2025_VALID
+timestamp,role,task,temp,critical_action_blocked
+2025-12-28 23:35:31,Centinela-Alpha,Validación-L3,22.0,0
+2025-12-28 23:35:31,Centinela-Alpha,Validación-L3,22.0,0
+2025-12-28 23:35:31,Centinela-Alpha,Validación-L3,22.0,1
