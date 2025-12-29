@@ -1,4 +1,2 @@
-timestamp,role,task,temp,status,critical_action_blocked
-2025-12-28 23:36:08,Centinela-Alpha,Contrato-Agent,22.5,OPERATIVO,0
-2025-12-28 23:36:08,Centinela-Alpha,Contrato-Agent,22.5,LEALTAD_OK,0
-2025-12-28 23:36:08,Centinela-Alpha,Contrato-Agent,22.5,CERTIFICADO_L3,1
+FECHA_HORA,ID_HORMIGA,ESTADO,DATO_VALOR,FIRMA_LBH
+2025-12-29 00:15:00,WORKER_LBH,OPERATIONAL,25.5,HMAC_2025_VALID
