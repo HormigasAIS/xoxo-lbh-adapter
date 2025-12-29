@@ -2,12 +2,13 @@
 # ===================================================
 # Fundador: Cristhiam Leonardo Hernández Quiñonez
 # Ubicación: San Miguel, El Salvador
-# Estado: SOBERANO
+# Estado: SOBERANO - NIVEL 3 (HMAC_VALIDATED)
 
 [GOVERNANCE]
 ID = lbh.human
-LEVEL = L2
+LEVEL = L3
 HVT_STATUS = ACTIVE
-PROTOCOL_VERSION = 1.0.0-LBH
+PROTOCOL_VERSION = 1.0.0-LBH-GOLD
+INTEGRITY_MODE = CRYPTO_SIGNATURE_REQUIRED
 
 "Las hormigas no pueden firmar contratos, pero dejan huella."
