@@ -16,11 +16,12 @@ def actualizar_csv():
                 try:
                     data_str = line.split("Datos del Enjambre:")[1].strip()
                     data = ast.literal_eval(data_str)
+                    # AJUSTE: Usamos las etiquetas exactas que el visualizador busca
                     lbh_row = {
-                        "FECHA_HORA": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                         "ID_HORMIGA": "WORKER_LBH",
-                        "ESTADO": data.get("status", "OPERATIONAL"),
-                        "DATO_VALOR": data.get("temp", 0),
+                        "status": data.get("status", "OPERATIONAL"),
+                        "temp": data.get("temp", 0),
                         "FIRMA_LBH": "HMAC_2025_VALID"
                     }
                     rows.append(lbh_row)
@@ -28,7 +29,7 @@ def actualizar_csv():
     if rows:
         df = pd.DataFrame(rows)
         df.to_csv(CSV_FILE, index=False)
-        print(f"✅ [MAESTRO] CSV Sincronizado.")
+        print(f"✅ [COMPATIBILIDAD] CSV Sincronizado con columna 'timestamp'.")
 
 if __name__ == "__main__":
     actualizar_csv()
