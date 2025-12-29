@@ -1,4 +1,4 @@
-timestamp,role,task,temp,critical_action_blocked
-2025-12-28 23:35:31,Centinela-Alpha,Validación-L3,22.0,0
-2025-12-28 23:35:31,Centinela-Alpha,Validación-L3,22.0,0
-2025-12-28 23:35:31,Centinela-Alpha,Validación-L3,22.0,1
+timestamp,role,task,temp,status,critical_action_blocked
+2025-12-28 23:36:08,Centinela-Alpha,Contrato-Agent,22.5,OPERATIVO,0
+2025-12-28 23:36:08,Centinela-Alpha,Contrato-Agent,22.5,LEALTAD_OK,0
+2025-12-28 23:36:08,Centinela-Alpha,Contrato-Agent,22.5,CERTIFICADO_L3,1
