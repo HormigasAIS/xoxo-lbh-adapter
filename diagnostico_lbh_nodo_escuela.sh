@@ -54,27 +54,10 @@ echo "🧠 CONCLUSIÓN DEL SISTEMA" | tee -a "$LOG"
 if grep -q "FAIL" "$LOG"; then
   echo "⚠️ Se detecta deterioro o rechazo de conexión." | tee -a "$LOG"
   echo "🔒 El Nodo está protegiéndose (comportamiento sano)." | tee -a "$LOG"
-  RESULTADO_ESTRES="Protegiéndose"
 else
   echo "✅ Nodo estable bajo carga." | tee -a "$LOG"
-  RESULTADO_ESTRES="Estable"
 fi
 
-# --- VÍNCULO CON LA CUARTA PÁGINA (PRESENTATION.HTML) ---
-JSON_OUT="../HormigasAIS-Nodo-Escuela/status_herencia.json"
-
-cat <<JSON > "$JSON_OUT"
-{
-  "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
-  "protocolo": "PTCC-Hormiga-10",
-  "version_lbh": "1.0.0-Solar",
-  "principio": "El código no tiene libre albedrío; es voluntad humana.",
-  "resultado": "$RESULTADO_ESTRES",
-  "log_preview": "Test de Deterioro finalizado con éxito."
-}
-JSON
-
 echo "" | tee -a "$LOG"
-echo "📁 Log generado en: $LOG"
-echo "📡 JSON de Herencia actualizado en: $JSON_OUT"
+echo "📁 Log generado en: $LOG" | tee -a "$LOG"
 echo "============================================" | tee -a "$LOG"
