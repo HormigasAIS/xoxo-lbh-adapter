@@ -1,19 +1,37 @@
-# 🐜 HormigasAIS - XOXO-LBH Adapter
+# 🐜 HormigasAIS - XOXO-LBH Adapter (v1.2.1)
+### Ingeniería de Protocolos Inteligentes | Soberanía Digital
 
-### 🛰️ Telemetría en Tiempo Real (Nivel 3)
-![Pulso del Enjambre](rendimiento.png)
-
-## 📡 Interfaz de Visualización y Auditoría Inalterable
-Este nodo actúa como el puente de telemetría para la colonia, traduciendo eventos del **Nodo XOXO-** bajo el protocolo **LBH (Lenguaje Binary HormigasAIS)**.
-
-## 📊 Estado de la Interfaz
-* **Estado:** 🔵 Sincronizado con Nodo Núcleo (Nivel 3)
-* **Visualizador:** Live Dashboard Activo
-* **Gobernanza:** [lbh.human](https://github.com/Thrumanshow/xoxo-lbh-adapter/blob/dbc862e1eb4df7ac1aa0462f235e13c3a5f368d4/contracts/config/lbh.human) (Cristhiam Leonardo Hernández Quiñonez)
-* **Protocolo de Agentes:** Contrato-Agents
-
-## 🛡️ Seguridad de Datos
-Toda la telemetría presentada aquí ha sido validada por la **Centinela Alpha**. Los datos son firmados mediante HMAC-2025 para asegurar que la soberanía del Fundador no sea alterada durante la transmisión.
+Este repositorio constituye la pieza clave de integración entre el bus de datos **XOXO** y el protocolo **LBH (Lenguaje Binario HormigasAIS)**. Diseñado para entornos de **Edge Computing, Robótica (ROS2) e IoT Industrial**, garantiza que la comunicación máquina-a-máquina (M2M) sea resiliente, eficiente y, sobre todo, soberana.
 
 ---
-*Visualizando la resiliencia desde San Miguel, El Salvador | 2025*
+
+## 👨‍💻 Autoría y Gobernanza
+* **Titular de Propiedad Intelectual:** Ingeniero Cristhiam Leonardo Hernández Quiñonez (**CLHQ**).
+* **Cargo:** Ingeniero de Protocolos HormigasAIS.
+* **Copyright:** Consecutivo © 2024-2026 (Protección Inalienable).
+* **Origen:** San Miguel, El Salvador.
+
+---
+
+## 🛡️ Capas de Seguridad Integrada
+El adaptador no solo transporta datos; los protege mediante un ecosistema de defensa activa:
+
+1. **Firma HMAC-2025:** Cada frame LBH es validado mediante firmas criptográficas para asegurar que el mensaje no ha sido alterado por agentes externos ("Mosquitos").
+2. **Validación Centinela:** Auditoría constante de integridad de archivos críticos (`security.py`, `json_lbh.py`).
+3. **Soberanía LBH:** Traducción de JSON a binario compacto para optimizar la energía y el ancho de banda en nodos remotos.
+
+---
+
+## ⚖️ Licencia y Uso
+Este software se distribuye bajo la **Business Source License 1.1 (Adaptada para HormigasAIS v1.2.1)**.
+* **Uso No Comercial:** Permitido para aprendizaje, pruebas y desarrollo comunitario.
+* **Uso Comercial/Industrial:** Requiere licencia oficial para entidades con >5 empleados o ejecución M2M persistente (>4h).
+* **Prohibición de Plagio:** La firma **CLHQ** es un sello de integridad; su remoción invalida el derecho de uso del protocolo.
+
+---
+
+> "La colonia no reside en la plataforma, reside en el protocolo."
+> — *Ing. Cristhiam Leonardo Hernández Quiñonez*
+
+---
+*Visualizando la resiliencia desde el borde del mundo.*
