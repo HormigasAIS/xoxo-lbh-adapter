@@ -59,3 +59,4 @@ Hicimos que los mensajes no solo se impriman, sino que viajen por el aire.
 > "Un frame LBH sin firma es un robot a la deriva. Un frame LBH con HMAC es una hormiga con armadura."
 > **Estado Actual:** Comunicación Full-Duplex (Doble vía) con validación de identidad activa.
 
+[2026-01-18 01:13:38] SOBERANÍA M2M VALIDADA: Sello CLHQ operativo en v1.2.1
