@@ -1,4 +1,6 @@
 # adapter/human_contract.py
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 # Lector del Contrato Humano – LBH Protocol v1.2
 # Fuente: config.human
 # Autoridad máxima: HUMANO

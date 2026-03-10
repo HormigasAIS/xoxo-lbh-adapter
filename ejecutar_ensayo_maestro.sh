@@ -1,4 +1,6 @@
 #!/bin/bash
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 # PROTOCOLO LBH: Reparación de Firma de Feromona - 24 Dic 2025
 
 # 1. Lanzamos la Emitter Ant corregida (Pasando type y value por separado)

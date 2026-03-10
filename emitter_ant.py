@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 import time
 from pheromone_bus import emit_pheromone
 

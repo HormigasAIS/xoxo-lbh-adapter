@@ -1,4 +1,6 @@
 #!/bin/bash
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 echo "🐜 Iniciando Entorno HormigasAIS..."
 # Activar entorno
 source venv_xoxo/bin/activate

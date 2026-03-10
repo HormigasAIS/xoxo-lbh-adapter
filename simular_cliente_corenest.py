@@ -1,4 +1,6 @@
 import sys
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 # Importamos la lógica del enjambre comercial
 sys.path.append('./commercial_swarm')
 from lbh_validator_service import process_freemium_request

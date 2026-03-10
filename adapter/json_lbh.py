@@ -1,6 +1,8 @@
 # COPYRIGHT CONSECUTIVO (C) 2024-2026 ING. CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ (CLHQ)
 # SOBERANÍA HORMIGASAIS - VALIDACIÓN LBH PROTEGIDA
 import json
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 import hmac
 import hashlib
 

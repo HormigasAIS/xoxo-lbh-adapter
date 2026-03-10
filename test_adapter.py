@@ -1,4 +1,6 @@
 # test_adapter.py
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 import time
 from adapter import XOXOAdapter, json_to_lbh, lbh_to_json
 

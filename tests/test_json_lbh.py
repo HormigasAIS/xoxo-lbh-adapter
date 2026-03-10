@@ -1,4 +1,6 @@
 # test_json_lbh.py
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 """
 Pruebas unitarias para json_lbh.py del XOXO-LBH Adapter
 Autor: Cristhiam Quiñonez

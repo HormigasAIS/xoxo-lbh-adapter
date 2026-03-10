@@ -1,45 +1,43 @@
 #!/usr/bin/env python3
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
+import os, pandas as pd, matplotlib.pyplot as plt, matplotlib.dates as mdates
 from datetime import datetime
 
+plt.style.use('dark_background')
+
 try:
+    # Ruta al repo (ajustada a la variable HOME de Termux)
+    ruta_repo = os.path.expanduser("~/xoxo-lbh-adapter/HormigasAIS-AirCity")
+    carpeta_salida = os.path.join(ruta_repo, "docs/reportes")
+    os.makedirs(carpeta_salida, exist_ok=True)
+    ruta_salida = os.path.join(carpeta_salida, "LATEST_MONITOR.png")
+
     df = pd.read_csv("AUDITORIA_HORMIGAS_2025.csv")
-    # Convertimos a datetime y aseguramos que no haya errores de zona horaria
     df['FECHA_HORA'] = pd.to_datetime(df['FECHA_HORA'])
-    
-    # Filtramos solo los datos generados en la última hora para máximo detalle
     ahora = datetime.now()
     df = df[df['FECHA_HORA'] > (ahora - pd.Timedelta(hours=1))]
 
     if not df.empty:
-        # Ordenamos por tiempo para que la línea no salte aleatoriamente
         df = df.sort_values('FECHA_HORA')
+        fig, ax = plt.subplots(figsize=(12, 6))
+        fig.patch.set_facecolor('#000000')
+        ax.set_facecolor('#000000')
+        plt.plot(df['FECHA_HORA'], df['DATO_VALOR'], color='#00ff00', marker='o', linestyle='-', linewidth=2)
+        plt.title(f"Auditoria LBH - Monitor de Misión ({ahora.strftime('%Y-%m-%d')})", color='#00ff00')
         
-        plt.figure(figsize=(12, 6))
-        # Usamos un estilo de línea más grueso y puntos claros
-        plt.plot(df['FECHA_HORA'], df['DATO_VALOR'], color='#00ff00', marker='o', 
-                 linestyle='-', linewidth=2, markersize=5, label='Latido Enjambre (LBH)')
+        # Firma de autor
+        plt.figtext(0.99, 0.01, 'Soberanía LBH - HormigasAIS / CLHQ', color='#00ff00', alpha=0.6, ha='right', va='bottom')
         
-        # EL TRUCO: Ajustamos el eje X estrictamente al rango de datos actuales
-        plt.xlim(df['FECHA_HORA'].min(), df['FECHA_HORA'].max())
-        
-        # Formato de eje X: Solo Minutos y Segundos
-        ax = plt.gca()
-        ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M:%S'))
-        
-        # Rotamos las etiquetas para que no se encimen
-        plt.xticks(rotation=45)
-        
-        plt.title(f"📊 Auditoría LBH - Zoom de Precisión ({ahora.strftime('%Y-%m-%d')})")
-        plt.xlabel("Tiempo Real (HH:MM:SS)")
-        plt.ylabel("Temperatura °C")
-        plt.grid(True, linestyle='--', alpha=0.3)
-        plt.legend()
-        
-        plt.tight_layout() # Evita que se corten las etiquetas
-        plt.savefig("REPORTE_RENDIMIENTO_HORMIGAS.png")
-        print("✅ Configuración ajustada: Zoom de precisión activado.")
+        plt.tight_layout()
+        plt.savefig(ruta_salida, facecolor=fig.get_facecolor())
+        plt.close()
+
+        # Sincronización automática con Gitea
+        os.system(f"cd {ruta_repo} && git add docs/reportes/LATEST_MONITOR.png")
+        os.system(f"cd {ruta_repo} && git commit -m '🤖 [AUTO] Actualización de monitor: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}'")
+        os.system(f"cd {ruta_repo} && git push origin main")
+
+        print(f"📊 Gráfico enviado a Gitea: {ruta_salida}")
+    else:
+        print("⚠️ No hay datos para graficar.")
 except Exception as e:
-    print(f"Error: {e}")
+    print(f"❌ Error en el flujo: {e}")

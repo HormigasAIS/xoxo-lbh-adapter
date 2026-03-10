@@ -1,4 +1,6 @@
 from adapter.human_contract import HumanContract
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 
 # ---- TEST GLOBAL (sin rol) ----
 print("=== GLOBAL (fallback) ===")

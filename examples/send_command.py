@@ -1,4 +1,6 @@
 # send_command.py
+# © 2025-2026 HormigasAIS - Proyectado por Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+# Propiedad Intelectual Protegida bajo el Protocolo de Soberanía LBH
 """
 Ejemplo de envío de comandos a un robot usando XOXO-LBH Adapter
 Autor: Cristhiam Quiñonez
