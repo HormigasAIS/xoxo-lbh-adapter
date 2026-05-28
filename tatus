@@ -1,0 +1,69 @@
+[33mcommit 1be18fd4081ce4b8e184442ea716540e2dc9013b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mgithub/main[m[33m)[m
+Author: Centinela-Alpha-LBH <centinela.alpha@lbh.human>
+Date:   Tue Mar 10 01:59:33 2026 -0600
+
+    🛡️ SEGURIDAD: Blindaje de credenciales y caché en xoxo-lbh-adapter
+
+ .env                             |    1 [31m-[m
+ .gitignore                       |    9 [32m+[m
+ ...xterno_gemini.cpython-312.pyc |  Bin [31m2601[m -> [32m0[m bytes
+ ...pheromone_bus.cpython-312.pyc |  Bin [31m2256[m -> [32m0[m bytes
+ ...ision_checker.cpython-312.pyc |  Bin [31m1960[m -> [32m0[m bytes
+ mosquitto.db                     |  Bin [31m47[m -> [32m0[m bytes
+ nohup.out                        |   24 [31m-[m
+ venv_xoxo/bin/Activate.ps1       |  247 [31m-[m
+ venv_xoxo/bin/activate           |   76 [31m-[m
+ venv_xoxo/bin/activate.csh       |   27 [31m-[m
+ venv_xoxo/bin/activate.fish      |   69 [31m-[m
+ venv_xoxo/bin/httpx              |    8 [31m-[m
+ venv_xoxo/bin/pip                |    8 [31m-[m
+ venv_xoxo/bin/pip3               |    8 [31m-[m
+ venv_xoxo/bin/pip3.12            |    8 [31m-[m
+ venv_xoxo/bin/python             |    1 [31m-[m
+ venv_xoxo/bin/python3            |    1 [31m-[m
+ venv_xoxo/bin/python3.12         |    1 [31m-[m
+ .../INSTALLER                    |    1 [31m-[m
+ .../METADATA                     |  625 [31m-[m
+ .../RECORD                       |   68 [31m-[m
+ .../WHEEL                        |    4 [31m-[m
+ .../licenses/LICENSE.md          |   27 [31m-[m
+ .../httpcore/__init__.py         |  141 [31m-[m
+ .../__init__.cpython-312.pyc     |  Bin [31m3222[m -> [32m0[m bytes
+ .../_api.cpython-312.pyc         |  Bin [31m3808[m -> [32m0[m bytes
+ .../_exceptions.cpython-312.pyc  |  Bin [31m3241[m -> [32m0[m bytes
+ .../_models.cpython-312.pyc      |  Bin [31m23188[m -> [32m0[m bytes
+ .../_ssl.cpython-312.pyc         |  Bin [31m666[m -> [32m0[m bytes
+ ...nchronization.cpython-312.pyc |  Bin [31m14209[m -> [32m0[m bytes
+ .../_trace.cpython-312.pyc       |  Bin [31m5666[m -> [32m0[m bytes
+ .../_utils.cpython-312.pyc       |  Bin [31m1346[m -> [32m0[m bytes
+ .../httpcore/_api.py             |   94 [31m-[m
+ .../httpcore/_async/__init__.py  |   39 [31m-[m
+ .../__init__.cpython-312.pyc     |  Bin [31m1679[m -> [32m0[m bytes
+ .../connection.cpython-312.pyc   |  Bin [31m11772[m -> [32m0[m bytes
+ ...nnection_pool.cpython-312.pyc |  Bin [31m19654[m -> [32m0[m bytes
+ .../http11.cpython-312.pyc       |  Bin [31m20165[m -> [32m0[m bytes
+ .../http2.cpython-312.pyc        |  Bin [31m31231[m -> [32m0[m bytes
+ .../http_proxy.cpython-312.pyc   |  Bin [31m18026[m -> [32m0[m bytes
+ .../interfaces.cpython-312.pyc   |  Bin [31m5810[m -> [32m0[m bytes
+ .../socks_proxy.cpython-312.pyc  |  Bin [31m16900[m -> [32m0[m bytes
+ .../_async/connection.py         |  222 [31m-[m
+ .../_async/connection_pool.py    |  420 [31m-[m
+ .../httpcore/_async/http11.py    |  379 [31m-[m
+ .../httpcore/_async/http2.py     |  592 [31m-[m
+ .../_async/http_proxy.py         |  367 [31m-[m
+ .../_async/interfaces.py         |  137 [31m-[m
+ .../_async/socks_proxy.py        |  341 [31m-[m
+ .../_backends/__init__.py        |    0
+ .../__init__.cpython-312.pyc     |  Bin [31m255[m -> [32m0[m bytes
+ .../anyio.cpython-312.pyc        |  Bin [31m8599[m -> [32m0[m bytes
+ .../auto.cpython-312.pyc         |  Bin [31m2747[m -> [32m0[m bytes
+ .../base.cpython-312.pyc         |  Bin [31m4949[m -> [32m0[m bytes
+ .../mock.cpython-312.pyc         |  Bin [31m7213[m -> [32m0[m bytes
+ .../sync.cpython-312.pyc         |  Bin [31m11420[m -> [32m0[m bytes
+ .../trio.cpython-312.pyc         |  Bin [31m8938[m -> [32m0[m bytes
+ .../httpcore/_backends/anyio.py  |  146 [31m-[m
+ .../httpcore/_backends/auto.py   |   52 [31m-[m
+ .../httpcore/_backends/base.py   |  101 [31m-[m
+ .../httpcore/_backends/mock.py   |  143 [31m-[m
+ .../httpcore/_backends/sync.py   |  241 [31m-[m
+ .../httpcore/_backends/t

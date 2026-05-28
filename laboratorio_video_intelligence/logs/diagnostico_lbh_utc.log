@@ -1,0 +1,41 @@
+============================================
+⚖️  DIAGNÓSTICO LBH – NODO-ESCUELA
+============================================
+
+🕒 TIEMPO DEL SISTEMA
+Local : Sat May 23 19:37:25 CST 2026
+UTC   : Sun May 24 01:37:25 UTC 2026
+
+🌍 ZONA HORARIA CONFIGURADA
+
+🔌 ESTADO DEL PUERTO 8081
+⚠️ Puerto 8081 no está escuchando
+
+🔥 TEST DE DETERIORO (curl x 20)
+[2026-05-24T01:37:26Z] Intento 1 → ❌ FAIL (000)
+[2026-05-24T01:37:26Z] Intento 2 → ❌ FAIL (000)
+[2026-05-24T01:37:26Z] Intento 3 → ❌ FAIL (000)
+[2026-05-24T01:37:27Z] Intento 4 → ❌ FAIL (000)
+[2026-05-24T01:37:27Z] Intento 5 → ❌ FAIL (000)
+[2026-05-24T01:37:27Z] Intento 6 → ❌ FAIL (000)
+[2026-05-24T01:37:28Z] Intento 7 → ❌ FAIL (000)
+[2026-05-24T01:37:28Z] Intento 8 → ❌ FAIL (000)
+[2026-05-24T01:37:28Z] Intento 9 → ❌ FAIL (000)
+[2026-05-24T01:37:29Z] Intento 10 → ❌ FAIL (000)
+[2026-05-24T01:37:29Z] Intento 11 → ❌ FAIL (000)
+[2026-05-24T01:37:29Z] Intento 12 → ❌ FAIL (000)
+[2026-05-24T01:37:30Z] Intento 13 → ❌ FAIL (000)
+[2026-05-24T01:37:30Z] Intento 14 → ❌ FAIL (000)
+[2026-05-24T01:37:30Z] Intento 15 → ❌ FAIL (000)
+[2026-05-24T01:37:31Z] Intento 16 → ❌ FAIL (000)
+[2026-05-24T01:37:31Z] Intento 17 → ❌ FAIL (000)
+[2026-05-24T01:37:31Z] Intento 18 → ❌ FAIL (000)
+[2026-05-24T01:37:32Z] Intento 19 → ❌ FAIL (000)
+[2026-05-24T01:37:32Z] Intento 20 → ❌ FAIL (000)
+
+🧠 CONCLUSIÓN DEL SISTEMA
+⚠️ Se detecta deterioro o rechazo de conexión.
+🔒 El Nodo está protegiéndose (comportamiento sano).
+
+📁 Log generado en: logs/diagnostico_lbh_utc.log
+============================================

@@ -1,1 +1,8 @@
-2025-12-31 13:57:13 🌸 Feromona 'solar_gain' emitida por 0.85
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/xoxo-lbh-adapter/swarm/manager_alpha/manager.py", line 7, in <module>
+    from adapter.core import XOXOAdapter
+  File "/data/data/com.termux/files/home/xoxo-lbh-adapter/adapter/__init__.py", line 5, in <module>
+    from .core import XOXOAdapter
+  File "/data/data/com.termux/files/home/xoxo-lbh-adapter/adapter/core.py", line 10, in <module>
+    import paho.mqtt.client as mqtt
+ModuleNotFoundError: No module named 'paho'
