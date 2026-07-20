@@ -1,9 +1,6 @@
-
-# Credenciales y Seguridad
 .env
-mosquitto.db
-nohup.out
-
-# Entornos Virtuales y Caché
 venv_xoxo/
 __pycache__/
+*.pyc
+*.db
+*.log

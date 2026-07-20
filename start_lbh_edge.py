@@ -19,7 +19,7 @@ def start_colony():
 
     cmd = [
         python_bin, "-m", "uvicorn", 
-        "adapter.bots.bot_gateway.app", # Nota el cambio a punto si es módulo
+        "adapter.bots.bot_gateway:app", # Forzado formato ASGI correcto para Uvicorn
         "--host", "127.0.0.1", 
         "--port", str(PORT),
         "--log-level", "info"

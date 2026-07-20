@@ -6,7 +6,7 @@
 # Autoridad máxima: HUMANO
 
 import os
-import configparser
+import json
 
 class HumanContract:
     def __init__(self, path="config.human"):
@@ -22,30 +22,25 @@ class HumanContract:
             return False
 
         try:
-            parser = configparser.ConfigParser()
-            parser.read(self.path)
+            with open(self.path) as f:
+                data = json.load(f)
 
-            # Cargar permisos globales
-            if "PERMISSIONS" in parser:
-                self.global_permissions = {k.upper(): parser.getboolean("PERMISSIONS", k)
-                                           for k in parser["PERMISSIONS"]}
+            # Cargar permisos desde la sección dedicada del JSON
+            perms = data.get("PERMISSIONS", {})
+            self.global_permissions = { k.upper(): bool(v) for k, v in perms.items() }
 
-            # Cargar roles
-            for section in parser.sections():
-                if section.startswith("ROLE:"):
-                    role_name = section.split(":")[1].upper()
-                    perms = {k.upper(): parser.getboolean(section, k)
-                             for k in parser[section] if parser[section][k].lower() in ["true", "false"]}
-                    self.roles[role_name] = perms
+            # Mapear roles dinámicos del enjambre para que hereden los permisos
+            for r in data.get("ROLES_REGISTRADOS", ["CLHQ", "GLOBAL", "ALPHA", "BETA", "GAMMA"]):
+                self.roles[r.upper()] = self.global_permissions.copy()
 
+            self.data = data
             self.loaded = True
-            print(f"📖 [LBH] Contrato cargado | Roles: {list(self.roles.keys())}")
+            print(f"📖 [LBH] Contrato cargado | Fundador: {data.get('fundador','?')} | Protocolo: {data.get('protocolo','?')}")
             return True
 
         except Exception as e:
             print(f"❌ [LBH] Error leyendo contrato humano: {e}")
             return False
-
     def allows(self, permission_name: str) -> bool:
         if not self.loaded:
             self.load()
