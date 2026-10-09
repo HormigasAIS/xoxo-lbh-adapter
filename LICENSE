@@ -1,23 +1,42 @@
-# BUSINESS SOURCE LICENSE 1.1 (ADAPTED FOR HORMIGASAIS V1.2.1)
-# ID SOBERANO: LBH-SUM-$(date +%s)-CLHQ-NI-SV
+HormigasAIS Source-Available License (Proprietary)
+Versión 1.0 — xoxo-lbh-adapter
 
-**COPYRIGHT CONSECUTIVO © 2024-2026 INGENIERO CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ**
+Copyright (c) 2026 Cristhiam Leonardo Hernández Quiñonez (CLHQ)
+Todos los derechos reservados.
 
-## 1. DECLARACIÓN DE PROPIEDAD INTELECTUAL PERPETUA
-La protección técnica de HormigasAIS y el XOXO-LBH Adapter se origina en su fundación (2024). Esta autoría es consecutiva, inalienable y se extiende a todas las obras derivadas, directas e indirectas, presentes y futuras, bajo la firma única CLHQ.
+1. Naturaleza de esta licencia
 
-## 2. PROTECCIÓN SOBERANA DE MÓDULOS CRÍTICOS
-Queda estrictamente prohibido el uso comercial o la alteración de los siguientes activos sin licencia comercial:
-* **Módulos de Seguridad:** `adapter/security.py`, `adapter/json_lbh.py`.
-* **Protocolos de Firma:** Implementaciones HMAC-2025 detectadas en el Core.
-* **Identidad:** Cualquier uso de la firma "CLHQ" o el nombre del Ingeniero titular.
+Esta no es una licencia de código abierto ni una Business Source License.
+Es una licencia propietaria de código fuente visible ("source-available"):
+el código puede leerse, estudiarse y auditarse públicamente, pero su uso,
+copia, modificación y redistribución requieren autorización explícita del
+Licenciante.
 
-## 3. PIQUETE LEGAL Y TÉCNICO
-La remoción de este aviso de copyright o de los metadatos que identifican al Ingeniero Cristhiam Leonardo Hernández Quiñonez invalidará la integridad HMAC del sistema, clasificando el nodo como "INTRUSO".
+2. Lo que SÍ está permitido sin autorización adicional
 
-[🐜 LBH-VALIDATION-STAMP]
-FIRMA_MAESTRA: CLHQ
-ESTADO: COPYRIGHT_CONSECUTIVO_ACTIVO
-VALIDACIÓN: $(printf "CLHQ-2024-2026" | sha256sum | cut -c1-20)
+  - Leer y estudiar el código fuente con fines de evaluación o auditoría.
+  - Hacer fork privado únicamente para revisión personal, sin distribuir
+    ni desplegar en producción.
 
-"LA COLONIA NO RESIDE EN LA PLATAFORMA, RESIDE EN EL PROTOCOLO."
+3. Lo que requiere autorización explícita de CLHQ
+
+  - Uso en producción, propio o de terceros.
+  - Redistribución, en forma original o modificada.
+  - Creación de obras derivadas destinadas a distribución o uso público.
+  - Cualquier uso comercial.
+
+4. Vigencia
+
+Esta licencia no tiene fecha de conversión a una licencia de código
+abierto. El Licenciante (CLHQ) retiene control indefinido sobre los
+términos de uso de xoxo-lbh-adapter, y puede otorgar licencias adicionales
+o cambiar estos términos para versiones futuras a su propio criterio.
+
+5. Sin garantía
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO,
+EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE
+COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
+
+Para solicitar una licencia de uso, contactar a CLHQ a través de
+github.com/Thrumanshow.
