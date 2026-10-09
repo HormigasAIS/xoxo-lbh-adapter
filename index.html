@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HormigasAIS | Estado de la Colonia</title>
+    <style>
+        body { background: #0a0a0a; color: #00ff41; font-family: 'Courier New', monospace; padding: 20px; }
+        .container { border: 1px solid #00ff41; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px #00ff41; }
+        .status-header { text-align: center; border-bottom: 2px solid #00ff41; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { border: 1px dashed #00ff41; padding: 10px; border-radius: 5px; }
+        .live { color: #00ff41; font-weight: bold; animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+        .footer { margin-top: 20px; font-size: 0.8em; text-align: center; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status-header">
+            <h1>🐜 HORMIGASAIS: STATUS PAGE</h1>
+            <p>Protocolo LBH | San Miguel, El Salvador</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>🛡️ Seguridad ADN</h3>
+                <p>Estado: <span class="live">SINCRONIZADO</span></p>
+                <p>Bóveda: lbh.human (Backup OK)</p>
+            </div>
+            <div class="card">
+                <h3>🧠 Agentes Activos</h3>
+                <p>Stanford: Vigilando Puertos</p>
+                <p>Enfermera: Carga Normal</p>
+            </div>
+        </div>
+
+        <div style="margin-top:20px;">
+            <h3>📋 Última Auditoría de Resiliencia</h3>
+            <pre style="background: #111; padding: 10px; border: 1px solid #333; overflow-x: auto;">
+                Sincronizando...
+                Estado de Red: 100% Operativa
+                Última Curación: Sector 8080/8081/8082 restablecido.
+            </pre>
+        </div>
+
+        <div class="footer">
+            Fundador: Cristhiam Hernández | © 2025 HormigasAIS
+        </div>
+    </div>
+</body>
+</html>

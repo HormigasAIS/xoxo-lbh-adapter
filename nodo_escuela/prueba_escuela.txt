@@ -1,0 +1,6 @@
+From: manager_alpha <alpha@hormigasais.com>
+To: clhq@hormigasais.com
+Subject: Despacho de Prueba Escuela LBH
+
+📡 [XOXO-BUS] FEROMONA_EMITIDA: {"timestamp": 1766646830.425983, "type": "mosquito_pulse", "origin": "manager_alpha", "status": "active", "mode": "master"}
+

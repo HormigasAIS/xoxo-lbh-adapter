@@ -1,0 +1,26 @@
+{
+    "fundador": "Cristhiam Leonardo Hernández Quiñonez",
+    "nacionalidad": "Nicaragüense",
+    "residencia": "El Salvador",
+    "rol": "Ingeniero de Protocolos Inteligentes",
+    "proyecto": "HormigasAIS Energy Solar",
+    "protocolo": "LBH-2025-2026",
+    "config_operativa": {
+        "sensibilidad_sur": 0.85,
+        "modo_soberano": true,
+        "prioridad_webhook": "ALTA",
+        "accion_detectada": "REGISTRAR_BITACORA"
+    },
+    "PERMISSIONS": {
+        "LBH_ASSIST": true,
+        "M2M_COMMUNICATION": true,
+        "SANDBOX_MODE": false,
+        "GOVERNANCE": true,
+        "SHUTDOWN_ROBOT": true,
+        "MODIFY_ROLES": true,
+        "OVERRIDE_PERMISSIONS": true,
+        "ACCESS_SENSITIVE_DATA": true,
+        "FORCE_STOP_TASK": true
+    },
+    "ROLES_REGISTRADOS": ["CLHQ", "GLOBAL", "ALPHA", "BETA", "GAMMA"]
+}

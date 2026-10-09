@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xoxo-lbh-adapter"
+version = "1.0.0"
+description = "Adapter XOXO <-> LBH-M2M para robots y comunicación M2M"
+authors = [
+    # Incluye el nombre y el correo electrónico de forma clara.
+    { name = "Cristhiam Quiñonez", email = "chrisquionez354@gmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = ["robotics", "mqtt", "LBH-M2M", "adapter", "IoT", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Home Automation"
+]
+
+# Dependencias base (CORREGIDAS y optimizadas para evitar fallos de compilación)
+dependencies = [
+    "paho-mqtt==1.6.1",
+    "fastapi==0.111.1",
+    "uvicorn==0.23.2",
+    "python-dotenv==1.1.1",
+    # ¡CRÍTICO! Faltaba una coma aquí
+    "typing-extensions==4.8.0",
+    # 'cryptography' funciona con 46.0.3, se incluye.
+    "cryptography==46.0.3"
+    # 'uvloop==0.17.0' fue eliminado para evitar el error de compilación.
+    # El bucle asyncio nativo funciona bien en Termux.
+]
+
+# Se añade esta sección para los usuarios que quieren rendimiento extra (uvloop)
+# Si un usuario quiere uvloop, debe instalarlo con 'pip install -e .[performance]'
+[project.optional-dependencies]
+performance = [
+    "uvloop==0.17.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/Thrumanshow/xoxo-lbh-adapter"
+Repository = "https://github.com/Thrumanshow/xoxo-lbh-adapter"
+Documentation = "https://github.com/Thrumanshow/xoxo-lbh-adapter/wiki"
+
+[tool.setuptools.packages.find]
+where = ["adapter"]
+exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--verbose --tb=short"
+testpaths = ["tests"]
