@@ -3,7 +3,7 @@ import httpx
 import time
 from datetime import datetime
 
-BOT_TOKEN = "8539663975:AAHOujZ97fKHeOk2Y79DcjfBuKDUcfjGihA"
+BOT_TOKEN = os.environ.get("LBH_BOT_TOKEN", "")
 MASTER_CHAT_ID = "8463843180"
 
 app = FastAPI()
