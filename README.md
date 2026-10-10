@@ -23,10 +23,10 @@ El adaptador no solo transporta datos; los protege mediante un ecosistema de def
 ---
 
 ## ⚖️ Licencia y Uso
-Este software se distribuye bajo la **Business Source License 1.1 (Adaptada para HormigasAIS v1.2.1)**.
-* **Uso No Comercial:** Permitido para aprendizaje, pruebas y desarrollo comunitario.
-* **Uso Comercial/Industrial:** Requiere licencia oficial para entidades con >5 empleados o ejecución M2M persistente (>4h).
-* **Prohibición de Plagio:** La firma **CLHQ** es un sello de integridad; su remoción invalida el derecho de uso del protocolo.
+Este software se distribuye bajo la **HormigasAIS Source-Available License v1.0** (licencia propietaria; texto completo en [LICENSE](LICENSE)).
+* **Permitido sin autorización adicional:** leer, estudiar y auditar el código; hacer un fork privado solo para revisión personal.
+* **Requiere autorización de CLHQ:** uso en producción, redistribución, obras derivadas para distribución o uso público, y cualquier uso comercial.
+* **Autoría:** conserva el aviso de autoría **CLHQ** en cualquier copia autorizada.
 
 ---
 
