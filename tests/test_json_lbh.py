@@ -16,12 +16,20 @@ class TestJsonLBH(unittest.TestCase):
         self.lbh_frame = json_to_lbh(self.sample_json)
 
     def test_conversion_to_lbh(self):
-        self.assertIsInstance(self.lbh_frame, bytes)
+        self.assertIsInstance(self.lbh_frame, str)
         self.assertGreater(len(self.lbh_frame), 0)
 
     def test_conversion_back_to_json(self):
         decoded = lbh_to_json(self.lbh_frame)
         self.assertEqual(decoded, self.sample_json)
+
+    def test_firma_alterada_se_rechaza(self):
+        frame = self.lbh_frame
+        alterado = frame[:-2] + ("00" if frame[-2:] != "00" else "11")
+        with self.assertRaises(Exception) as cm:
+            lbh_to_json(alterado)
+        self.assertIn("HMAC", str(cm.exception))
+
 
 if __name__ == "__main__":
     unittest.main()
