@@ -8,3 +8,6 @@ __pycache__/
 *.pyc
 nohup.out
 *.egg-info/
+*.bak
+*.bak_*
+.hormigas_secrets

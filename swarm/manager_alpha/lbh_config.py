@@ -1,5 +1,6 @@
 # Configuración de Seguridad Unificada para el Enjambre
-SECRET_KEY = "HormigasAIS_2025_Secure"
+import os as _os
+SECRET_KEY = _os.environ.get("LBH_SWARM_SECRET", "")
 TOPIC_SWARM = "hormigasais/swarm/telemetry"
 
 def get_auth():

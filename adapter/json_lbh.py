@@ -8,8 +8,11 @@ import hashlib
 
 # 🔐 CLAVE SECRETA DEL ENJAMBRE 
 # Debe ser la misma en la Worker y en el Manager
-SECRET_KEY = b"hormigasais_secret_token_2025"
-
+import os as _os
+_LBH_KEY = _os.environ.get("LBH_SWARM_SECRET", "")
+if not _LBH_KEY:
+    raise RuntimeError("Falta la variable de entorno LBH_SWARM_SECRET (carga ~/.hormigas_secrets)")
+SECRET_KEY = _LBH_KEY.encode()
 def json_to_lbh(data_dict: dict) -> str:
     """Convierte un diccionario a un Frame LBH firmado (Hexadecimal)"""
     json_str = json.dumps(data_dict, separators=(',', ':'))
